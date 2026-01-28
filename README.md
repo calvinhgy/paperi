@@ -1,2 +1,1 @@
-# paperi
-Daily news on AI,VC,Startups
+# Paper.i - AI News Archive
