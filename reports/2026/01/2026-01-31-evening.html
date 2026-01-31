@@ -1,0 +1,496 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 晚报 - 2026年01月31日</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 
+                         'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+        .header h1 {
+            color: #667eea;
+            margin: 0 0 10px 0;
+            font-size: 32px;
+        }
+        .header .date {
+            color: #666;
+            font-size: 16px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            color: #667eea;
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .news-item {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .news-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+        .news-item.vc-insight {
+            border-left-color: #f59e0b;
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        }
+        .news-item.funding {
+            border-left-color: #10b981;
+        }
+        .news-item.trending {
+            border-left-color: #ef4444;
+        }
+        .category {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #667eea;
+            color: white;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .vc-source {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #f59e0b;
+            color: white;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin: 10px 0;
+        }
+        .news-content {
+            color: #555;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            font-size: 13px;
+            color: #888;
+        }
+        .news-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .news-link:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            color: #888;
+            font-size: 14px;
+        }
+        .highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+        .highlight h2 {
+            margin: 0 0 20px 0;
+            font-size: 22px;
+        }
+        .highlight-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .highlight-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📰 AI 晚报</h1>
+            <div class="date">2026年01月31日 | AI / VC / Startup 重点新闻</div>
+        </div>
+        
+        <div class="highlight">
+            <h2>🔥 头条速览</h2>
+            <div class="highlight-item">
+                <strong>1. Kimi K2.5 技术报告发布</strong> - MoonshotAI 发布新一代模型技术细节 (HN 305 points)
+            </div>
+            <div class="highlight-item">
+                <strong>2. Accel 领投多家 AI 基础设施公司</strong> - depthfirst (安全), Port (工程平台) 获投
+            </div>
+            <div class="highlight-item">
+                <strong>3. Amagi 和 Netskope 成功 IPO</strong> - 云视频和云安全领域里程碑
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">💎 VC观点精选</div>
+
+            <div class="news-item vc-insight">
+                <div>
+                    <span class="category">💎 VC观点</span>
+
+                    <span class="vc-source">a16z</span>
+
+                </div>
+                <div class="news-title">AI 基础设施竞赛：能源政策成为关键</div>
+
+                <div style="color: #888; font-size: 13px; margin: 5px 0;">by Multiple Partners</div>
+
+                <div class="news-content">a16z 发布观点认为，AI 发展的"速度到电力"(speed-to-power) 挑战正在成为竞争关键。建议美国需要制定支持初创企业的 AI 能源政策，确保公平竞争环境</div>
+                <div class="news-meta">
+                    <span>🔥 Strategic Insight</span>
+                    <a href="https://a16z.com/posts/" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item vc-insight">
+                <div>
+                    <span class="category">💎 VC观点</span>
+
+                    <span class="vc-source">a16z</span>
+
+                </div>
+                <div class="news-title">AI 改变企业市场格局</div>
+
+                <div class="news-content">a16z 最新数据显示企业 AI 战场竞争加剧，分析谁在赢得市场份额以及未来趋势</div>
+                <div class="news-meta">
+                    <span>🔥 Market Analysis</span>
+                    <a href="https://a16z.com/news-content/" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item vc-insight">
+                <div>
+                    <span class="category">💎 VC观点</span>
+
+                    <span class="vc-source">NFX</span>
+
+                </div>
+                <div class="news-title">无屏幕创业公司：AI 应用的新哲学</div>
+
+                <div class="news-content">NFX 提出"无屏幕创业公司"概念，认为 AI 应用应该超越传统界面限制，探索更自然的交互方式</div>
+                <div class="news-meta">
+                    <span>🔥 Thought Leadership</span>
+                    <a href="https://www.nfx.com/post/screenless-startup" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item vc-insight">
+                <div>
+                    <span class="category">💎 VC观点</span>
+
+                    <span class="vc-source">NFX</span>
+
+                </div>
+                <div class="news-title">2025 年定义创业的五大理念</div>
+
+                <div class="news-content">NFX 根据创始人反馈总结 2025 年最重要的五个创业趋势和理念</div>
+                <div class="news-meta">
+                    <span>🔥 Founder Survey</span>
+                    <a href="https://www.nfx.com/post/five-ideas-defining-2025" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item vc-insight">
+                <div>
+                    <span class="category">💎 VC观点</span>
+
+                    <span class="vc-source">Y Combinator</span>
+
+                </div>
+                <div class="news-title">Groww 成为 YC 首家在印度上市的公司</div>
+
+                <div class="news-content">Y Combinator 庆祝投资的印度数字投资平台 Groww 成功 IPO，这是 YC 首家在印度上市的公司，标志着印度科技生态的成熟</div>
+                <div class="news-meta">
+                    <span>🔥 Historic Milestone</span>
+                    <a href="https://www.ycombinator.com/blog/groww" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item vc-insight">
+                <div>
+                    <span class="category">💎 VC观点</span>
+
+                    <span class="vc-source">Y Combinator</span>
+
+                </div>
+                <div class="news-title">YC 宣布新访问合伙人阵容</div>
+
+                <div class="news-content">YC 宣布 9 位杰出创始人加入访问合伙人团队，包括 Matt Riley, Harshita Arora 等</div>
+                <div class="news-meta">
+                    <span>🔥 Team Expansion</span>
+                    <a href="https://www.ycombinator.com/blog/ycs-newest-visiting-partners" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">🚀 AI技术突破</div>
+
+            <div class="news-item ">
+                <div>
+                    <span class="category">🚀 AI模型</span>
+
+                </div>
+                <div class="news-title">Kimi K2.5 技术报告发布</div>
+
+                <div class="news-content">MoonshotAI 发布 Kimi K2.5 技术报告，详细介绍了新一代 AI 模型的技术架构和能力提升</div>
+                <div class="news-meta">
+                    <span>🔥 HN 305 points, 113 comments</span>
+                    <a href="https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item ">
+                <div>
+                    <span class="category">🚀 AI开发工具</span>
+
+                </div>
+                <div class="news-title">Graphite + Cursor 统一工程平台</div>
+
+                <div class="news-content">Graphite 与 Cursor 合作，打造 AI 时代的统一工程平台，提升开发者协作效率</div>
+                <div class="news-meta">
+                    <span>🔥 AI Development Breakthrough</span>
+                    <a href="https://www.accel.com/noteworthies/graphite-cursor-one-engineering-platform-for-the-ai-era" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item ">
+                <div>
+                    <span class="category">🚀 开源</span>
+
+                </div>
+                <div class="news-title">Netskope 上市：云安全领域里程碑</div>
+
+                <div class="news-content">Lightspeed 投资的云安全公司 Netskope IPO 成功，CEO Sanjay Beri 分享从零到 75 亿美元估值的创业历程</div>
+                <div class="news-meta">
+                    <span>🔥 IPO Milestone</span>
+                    <a href="https://lsvp.com/stories/" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item ">
+                <div>
+                    <span class="category">🚀 开源</span>
+
+                </div>
+                <div class="news-title">Peerweb：基于 WebTorrent 的去中心化网站托管</div>
+
+                <div class="news-content">新项目 Peerweb 提供基于 P2P 技术的去中心化网站托管方案</div>
+                <div class="news-meta">
+                    <span>🔥 HN 263 points, 92 comments</span>
+                    <a href="https://peerweb.lol/" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">💰 融资动态</div>
+
+            <div class="news-item funding">
+                <div>
+                    <span class="category">💰 融资</span>
+
+                </div>
+                <div class="news-title">Accel 领投 depthfirst Series A 轮融资</div>
+
+                <div class="news-content">Accel 领投软件安全公司 depthfirst 的 A 轮融资，专注于保护全球软件供应链安全</div>
+                <div class="news-meta">
+                    <span>🔥 Top-tier VC investment</span>
+                    <a href="https://www.accel.com/noteworthies/accel-leads-depthfirsts-series-a-securing-the-worlds-software-software" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item funding">
+                <div>
+                    <span class="category">💰 融资</span>
+
+                </div>
+                <div class="news-title">Accel 投资 Port：工程团队的代理化未来</div>
+
+                <div class="news-content">Accel 投资 Port 平台，旨在为工程团队构建 AI 代理驱动的未来工作流</div>
+                <div class="news-meta">
+                    <span>🔥 Strategic Investment</span>
+                    <a href="https://www.accel.com/noteworthies/port-the-platform-for-engineerings-agentic-future" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item funding">
+                <div>
+                    <span class="category">💰 融资</span>
+
+                </div>
+                <div class="news-title">Accel 投资 Zed：新一代新银行</div>
+
+                <div class="news-content">Accel 领投 Zed 的 A 轮融资，这是一家面向新一代用户的新银行平台</div>
+                <div class="news-meta">
+                    <span>🔥 Fintech Series A</span>
+                    <a href="https://www.accel.com/noteworthies/accel-leads-zeds-series-a-a-neobank-for-a-new-generation" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item funding">
+                <div>
+                    <span class="category">💰 资金</span>
+
+                </div>
+                <div class="news-title">CERN 接受 10 亿美元私人投资</div>
+
+                <div class="news-content">CERN 接受 10 亿美元私人资金投入未来环形对撞机项目</div>
+                <div class="news-meta">
+                    <span>🔥 Major Funding</span>
+                    <a href="https://physicsworld.com/a/cern-accepts-1bn-in-private-cash-towards-future-circular-collider/" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">🏢 企业新闻</div>
+
+            <div class="news-item ">
+                <div>
+                    <span class="category">🏢 企业新闻</span>
+
+                </div>
+                <div class="news-title">Amagi 成功 IPO</div>
+
+                <div class="news-content">Accel 投资的云视频技术平台 Amagi 成功上市，标志着企业级 SaaS 市场的又一里程碑</div>
+                <div class="news-meta">
+                    <span>🔥 IPO Success</span>
+                    <a href="https://www.accel.com/noteworthies/congratulations-to-amagi-on-its-ipo" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item ">
+                <div>
+                    <span class="category">🏢 产品发布</span>
+
+                </div>
+                <div class="news-title">GitHub Trending: openclaw 和 MCP 生态爆发</div>
+
+                <div class="news-content">openclaw 成为 GitHub Trending Top 项目，个人 AI 助手生态快速发展；MCP (Model Context Protocol) 应用协议正式发布</div>
+                <div class="news-meta">
+                    <span>🔥 GitHub Trending #1</span>
+                    <a href="https://github.com/openclaw/openclaw" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item ">
+                <div>
+                    <span class="category">🏢 并购</span>
+
+                </div>
+                <div class="news-title">ServiceNow 收购 Veza：身份安全新篇章</div>
+
+                <div class="news-content">ServiceNow 收购身份安全公司 Veza，标志着企业身份管理进入新阶段</div>
+                <div class="news-meta">
+                    <span>🔥 Major Acquisition</span>
+                    <a href="https://www.accel.com/noteworthies/servicenow-veza-identity-securitys-next-chapter" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item ">
+                <div>
+                    <span class="category">🏢 产品</span>
+
+                </div>
+                <div class="news-title">Show HN: 训练 9M 语音模型修正普通话发音</div>
+
+                <div class="news-content">开发者分享如何训练一个 900 万参数的语音模型来修正普通话声调发音问题</div>
+                <div class="news-meta">
+                    <span>🔥 HN 253 points, 91 comments</span>
+                    <a href="https://simedw.com/2026/01/31/ear-pronunication-via-ctc/" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">📊 行业分析</div>
+
+            <div class="news-item ">
+                <div>
+                    <span class="category">📊 报告</span>
+
+                </div>
+                <div class="news-title">Accel 2025 Globalscape：算力竞赛</div>
+
+                <div class="news-content">Accel 发布 2025 年度全球科技报告，重点关注全球算力竞赛和基础设施发展</div>
+                <div class="news-meta">
+                    <span>🔥 Annual Report</span>
+                    <a href="https://www.accel.com/noteworthies/accel-2025-globalscape-race-for-compute" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+            <div class="news-item trending">
+                <div>
+                    <span class="category">🔥 热议</span>
+
+                </div>
+                <div class="news-title">Hacker News：自动化编程讨论</div>
+
+                <div class="news-content">Redis 创始人 Antirez 发表文章讨论自动化编程，引发 HN 社区热烈讨论</div>
+                <div class="news-meta">
+                    <span>🔥 HN Hot Topic</span>
+                    <a href="https://antirez.com/news/159" class="news-link" target="_blank">阅读原文 →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>本报告由 Clawdbot AI 自动生成</p>
+            <p>数据来源：Hacker News, GitHub Trending, TechCrunch, VentureBeat, a16z, Accel, NFX, YC, Lightspeed 等</p>
+            <p>生成时间：2026-01-31 11:01:40 UTC</p>
+        </div>
+    </div>
+</body>
+</html>
