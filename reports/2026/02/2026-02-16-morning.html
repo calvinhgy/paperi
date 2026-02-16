@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【AI早报】2026-02-17 - AI/VC/Startup 重点新闻 📰</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f7fa;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #1e40af;
+            margin: 0;
+            font-size: 28px;
+        }
+        .date {
+            color: #64748b;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .section-title {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .section-title.vc {
+            background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+        }
+        .section-title.tech {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+        }
+        .section-title.funding {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+        }
+        .section-title.enterprise {
+            background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+        }
+        .section-title.analysis {
+            background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+        }
+        .news-item {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .news-item.vc {
+            border-left-color: #d97706;
+            background: #fffbeb;
+        }
+        .news-item.tech {
+            border-left-color: #059669;
+        }
+        .news-item.funding {
+            border-left-color: #dc2626;
+        }
+        .news-item.hot {
+            border-left-color: #f59e0b;
+            background: #fef3c7;
+        }
+        .tag {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-right: 8px;
+            font-weight: 600;
+        }
+        .tag.vc {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .tag.tech {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        .tag.funding {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        .tag.hot {
+            background: #fed7aa;
+            color: #9a3412;
+        }
+        .news-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e293b;
+            margin: 10px 0;
+        }
+        .news-content {
+            color: #475569;
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+        .meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #64748b;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            color: #64748b;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📰 AI早报 - 2026年2月17日</h1>
+            <div class="date">AI / VC / Startup 重点新闻汇总</div>
+        </div>
+
+        <!-- 头条速览 -->
+        <div class="section">
+            <div class="section-title">🔥 头条速览</div>
+            
+            <div class="news-item hot">
+                <div>
+                    <span class="tag tech">🚀 AI模型</span>
+                    <span class="tag hot">🔥 热议</span>
+                </div>
+                <div class="news-title">Qwen3.5发布：397B参数原生多模态Agent模型</div>
+                <div class="news-content">
+                    阿里巴巴通义千问团队发布Qwen3.5-397B-A17B（MoE架构），号称达到Claude Sonnet 4.5水平。模型支持262K上下文（通过YARN扩展至1M），在SWE-bench等基准测试中表现出色。社区讨论热烈，部分用户质疑benchmarking策略，但开源权重版本仍引发广泛关注。适合在128GB统一内存设备（Mac Studio/Strix Halo）上量化运行。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 热度: HN 348分 | 170评论</div>
+                    <div class="meta-item">⏰ 13小时前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://qwen.ai/blog?id=qwen3.5" target="_blank">🔗 官方博客</a> | 
+                    <a href="https://news.ycombinator.com/item?id=47032876" target="_blank">💬 HN讨论</a>
+                </div>
+            </div>
+
+            <div class="news-item tech">
+                <div>
+                    <span class="tag tech">📊 研究</span>
+                    <span class="tag hot">争议</span>
+                </div>
+                <div class="news-title">研究发现：自生成Agent Skills基本无效</div>
+                <div class="news-content">
+                    arXiv新论文《SkillsBench》测试了7种Agent模型配置，发现精心策划的Skills可提升16.2pp通过率，但<span class="highlight">自生成Skills平均无效</span>。研究显示模型无法可靠地创造自己能从中受益的程序性知识。社区对研究方法存在争议，认为应测试"事后总结经验"而非"事前空想规划"。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 HN 88分 | 44评论</div>
+                    <div class="meta-item">⏰ 1小时前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://arxiv.org/abs/2602.12670" target="_blank">🔗 论文链接</a> | 
+                    <a href="https://news.ycombinator.com/item?id=47040430" target="_blank">💬 HN讨论</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div>
+                    <span class="tag">🛠️ 产品</span>
+                    <span class="tag tech">开发工具</span>
+                </div>
+                <div class="news-title">Docker发布NanoClaw沙箱支持：安全运行Coding Agents</div>
+                <div class="news-content">
+                    Docker官方博客宣布支持在Docker Shell Sandboxes中运行NanoClaw及其他AI coding agents（Claude Code、Gemini、Codex等）。提供microVM级别隔离，允许无监督但安全的代码执行环境。这是继1月30日宣布Coding Agent安全沙箱功能后的进一步扩展。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 HN 3分（刚发布）</div>
+                    <div class="meta-item">⏰ 6分钟前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://www.docker.com/blog/run-nanoclaw-in-docker-shell-sandboxes/" target="_blank">🔗 官方博客</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- VC观点精选 -->
+        <div class="section">
+            <div class="section-title vc">💎 VC观点精选</div>
+            
+            <div class="news-item vc">
+                <div>
+                    <span class="tag vc">💼 NFX</span>
+                    <span class="tag">架构趋势</span>
+                </div>
+                <div class="news-title">NFX合伙人Morgan Beller：云之上的技术栈</div>
+                <div class="news-content">
+                    NFX合伙人Morgan Beller在2月最新文章《The Stack Above the Cloud》中探讨云计算之上的新一层抽象。文章分析了AI如何改变软件架构范式，以及这对创业公司的影响。NFX图书馆还强调了"AI劳动力市场"的崛起，认为这是下一个重大投资主题。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">🏢 机构: NFX (Tier 3)</div>
+                    <div class="meta-item">👤 作者: Morgan Beller</div>
+                </div>
+                <div class="meta">
+                    <a href="https://www.nfx.com/post/stack-above-the-cloud" target="_blank">🔗 阅读全文</a>
+                </div>
+            </div>
+
+            <div class="news-item vc">
+                <div>
+                    <span class="tag vc">💼 NFX</span>
+                    <span class="tag">AI应用</span>
+                </div>
+                <div class="news-title">NFX重点关注：Guided AI Agents赋能中小企业</div>
+                <div class="news-content">
+                    NFX最新观点强调"引导式AI Agents"将成为SMB市场的turbocharger。与完全自主的agents不同，guided agents在人类监督下运行，更适合中小企业场景。NFX认为这是AI应用的下一个爆发点，特别是在垂直领域SaaS中。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">🏢 机构: NFX</div>
+                    <div class="meta-item">📂 主题: AI Workforce</div>
+                </div>
+                <div class="meta">
+                    <a href="https://www.nfx.com/post/guided-ai-agents-turbocharge-smb" target="_blank">🔗 阅读全文</a> | 
+                    <a href="https://www.nfx.com/post/ai-workforce-is-here" target="_blank">相关：AI劳动力市场</a>
+                </div>
+            </div>
+
+            <div class="news-item vc">
+                <div>
+                    <span class="tag vc">💼 First Round</span>
+                    <span class="tag">Product-Market Fit</span>
+                </div>
+                <div class="news-title">First Round持续输出：PMF系列访谈更新</div>
+                <div class="news-content">
+                    First Round合伙人Todd Jackson的"Paths to Product-Market Fit"系列继续更新，采访多位创业者分享从0到PMF的关键时刻。First Round Review保持10年+的高质量内容输出，被行业认为是"比HBR质量更高的免费资源"。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">🏢 机构: First Round Capital (Tier 3)</div>
+                    <div class="meta-item">📺 系列: In Depth播客</div>
+                </div>
+                <div class="meta">
+                    <a href="https://review.firstround.com" target="_blank">🔗 First Round Review</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI技术突破 -->
+        <div class="section">
+            <div class="section-title tech">🚀 AI技术突破</div>
+            
+            <div class="news-item tech">
+                <div>
+                    <span class="tag tech">教程</span>
+                </div>
+                <div class="news-title">Visual Introduction to PyTorch 发布</div>
+                <div class="news-content">
+                    0byte.io发布PyTorch可视化入门教程，通过直观的图解帮助开发者理解深度学习框架核心概念。适合初学者快速上手PyTorch开发。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 HN 72分 | 8评论</div>
+                    <div class="meta-item">⏰ 3小时前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://0byte.io/articles/pytorch_introduction.html" target="_blank">🔗 阅读教程</a>
+                </div>
+            </div>
+
+            <div class="news-item tech">
+                <div>
+                    <span class="tag tech">代理工具</span>
+                </div>
+                <div class="news-title">WebMCP提案：Web版Model Context Protocol</div>
+                <div class="news-content">
+                    W3C Web Machine Learning社区组提出WebMCP标准，旨在为浏览器环境提供标准化的模型上下文协议。这将使AI模型能够更好地与Web应用集成，推动浏览器端AI应用发展。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 HN 120分 | 63评论</div>
+                    <div class="meta-item">⏰ 5小时前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://webmachinelearning.github.io/webmcp/" target="_blank">🔗 查看提案</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 企业新闻 -->
+        <div class="section">
+            <div class="section-title enterprise">🏢 企业新闻 & Show HN</div>
+            
+            <div class="news-item">
+                <div>
+                    <span class="tag">Show HN</span>
+                </div>
+                <div class="news-title">Wildex：现实世界野生动物的Pokémon Go</div>
+                <div class="news-content">
+                    开发者推出Wildex应用，结合AR技术与真实野生动物识别，用户可以在户外"捕捉"并识别真实的植物和动物。融合了游戏化体验与自然教育，已上线App Store。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 HN 40分 | 22评论</div>
+                    <div class="meta-item">⏰ 1小时前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://apps.apple.com/us/app/wildex-identify-plants-animals/id6748092158" target="_blank">🔗 App Store</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div>
+                    <span class="tag">Show HN</span>
+                    <span class="tag tech">开源</span>
+                </div>
+                <div class="news-title">FreeFlow：开源的语音输入工具替代品</div>
+                <div class="news-content">
+                    开发者zachlatta发布FreeFlow，开源免费的语音转文字工具，对标Wispr Flow、Superwhisper和Monologue等商业产品。支持多平台，基于Whisper模型。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 HN 31分 | 18评论</div>
+                    <div class="meta-item">⏰ 1小时前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://github.com/zachlatta/freeflow" target="_blank">🔗 GitHub</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div>
+                    <span class="tag">Show HN</span>
+                </div>
+                <div class="news-title">Jemini：针对Epstein档案的Gemini搜索引擎</div>
+                <div class="news-content">
+                    开发者创建Jemini，专门用于搜索和分析Epstein案件公开文档的AI工具。利用LLM技术实现语义搜索和问答功能，引发广泛关注。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 HN 189分 | 41评论</div>
+                    <div class="meta-item">⏰ 4小时前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://jmail.world/jemini" target="_blank">🔗 访问工具</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 行业分析 -->
+        <div class="section">
+            <div class="section-title analysis">📊 行业分析 & 社区热议</div>
+            
+            <div class="news-item">
+                <div>
+                    <span class="tag">分析</span>
+                </div>
+                <div class="news-title">State of Show HN 2025：社区统计分析</div>
+                <div class="news-content">
+                    Sturdy Statistics发布2025年Hacker News"Show HN"帖子统计分析，揭示社区项目展示趋势、热门类别和成功模式。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 HN 39分 | 4评论</div>
+                    <div class="meta-item">⏰ 3小时前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://blog.sturdystatistics.com/posts/show_hn/" target="_blank">🔗 阅读报告</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div>
+                    <span class="tag hot">🔥 热议</span>
+                </div>
+                <div class="news-title">LLM辅助反编译的长尾效应</div>
+                <div class="news-content">
+                    技术博客深入分析LLM在代码反编译中的应用，探讨其在逆向工程中的实际价值与局限性。虽然LLM能理解汇编代码，但在复杂场景下仍需人工干预。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 HN 28分 | 8评论</div>
+                    <div class="meta-item">⏰ 3小时前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://blog.chrislewis.au/the-long-tail-of-llm-assisted-decompilation/" target="_blank">🔗 阅读全文</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div>
+                    <span class="tag">趋势</span>
+                </div>
+                <div class="news-title">垂直软件10年回顾：未来走向何方？</div>
+                <div class="news-content">
+                    创业者分享10年构建垂直SaaS的经验与反思，探讨AI时代垂直软件公司面临的挑战和机遇。引发业内对vertical software未来的热议。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 HN 7分 | 5评论</div>
+                    <div class="meta-item">⏰ 1小时前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://twitter.com/nicbstme/status/2023501562480644501" target="_blank">🔗 Twitter讨论</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 其他值得关注 -->
+        <div class="section">
+            <div class="section-title">💡 其他值得关注</div>
+            
+            <div class="news-item">
+                <div>
+                    <span class="tag">安全</span>
+                </div>
+                <div class="news-title">蓝牙设备隐私泄露问题深度分析</div>
+                <div class="news-content">
+                    DMCC研究揭示蓝牙设备可能泄露的隐私信息，包括设备跟踪、位置推断等安全风险。文章提供详细的技术分析和防护建议。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 HN 256分 | 91评论</div>
+                    <div class="meta-item">⏰ 8小时前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://blog.dmcc.io/journal/2026-bluetooth-privacy-bluehood/" target="_blank">🔗 阅读研究</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div>
+                    <span class="tag">工具</span>
+                </div>
+                <div class="news-title">Ghidra：NSA开源的逆向工程工具再受关注</div>
+                <div class="news-content">
+                    NSA开发的开源逆向工程框架Ghidra在社区重新引发讨论。作为IDA Pro的免费替代品，Ghidra功能强大且完全开源，适合安全研究和软件分析。
+                </div>
+                <div class="meta">
+                    <div class="meta-item">📊 HN 287分 | 158评论</div>
+                    <div class="meta-item">⏰ 10小时前</div>
+                </div>
+                <div class="meta">
+                    <a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank">🔗 GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📧 每日AI、VC、创业重点新闻，助您把握行业脉搏</p>
+            <p style="margin-top: 10px; font-size: 12px; color: #94a3b8;">
+                新闻来源: Hacker News, GitHub Trending, TechCrunch, VentureBeat, Top 20 VC Blogs<br>
+                生成时间: 2026-02-17 11:00 PM UTC
+            </p>
+        </div>
+    </div>
+</body>
+</html>
