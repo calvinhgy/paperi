@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI晚报 - 2026年02月22日</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .header .date {
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            font-size: 22px;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .news-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .news-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .tag-ai { background-color: #e3f2fd; color: #1976d2; }
+        .tag-vc { background-color: #fff3e0; color: #f57c00; }
+        .tag-funding { background-color: #e8f5e9; color: #388e3c; }
+        .tag-product { background-color: #f3e5f5; color: #7b1fa2; }
+        .tag-hot { background-color: #ffebee; color: #c62828; }
+        .news-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 8px 0;
+        }
+        .news-title a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .news-title a:hover {
+            color: #667eea;
+        }
+        .news-meta {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin: 8px 0;
+        }
+        .news-content {
+            color: #555;
+            margin: 10px 0;
+        }
+        .vc-highlight {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .footer {
+            text-align: center;
+            color: #7f8c8d;
+            margin-top: 30px;
+            padding: 20px;
+            font-size: 13px;
+        }
+        .emoji {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📰 AI晚报 · AI/VC/Startup 重点新闻</h1>
+        <div class="date">2026年02月22日 星期日</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">🔥 头条速览</div>
+        
+        <div class="news-item">
+            <span class="news-tag tag-ai">AI模型</span>
+            <span class="news-tag tag-hot">热议</span>
+            <div class="news-title">
+                <a href="https://news.ycombinator.com/item?id=47106686">Claude Code：规划与执行分离的最佳实践</a>
+            </div>
+            <div class="news-meta">📊 565 points | 💬 342 comments | Hacker News</div>
+            <div class="news-content">
+                开发者分享了如何使用Claude Code进行代码开发的最佳实践，强调将规划（planning）和执行（execution）分离的重要性。这种方法显著提升了AI辅助编程的效率和代码质量，引发了社区广泛讨论。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-ai">技术突破</span>
+            <span class="news-tag tag-hot">热议</span>
+            <div class="news-title">
+                <a href="https://github.com/xaskasdf/ntransformer">单张RTX 3090运行Llama 3.1 70B：NVMe直连GPU绕过CPU</a>
+            </div>
+            <div class="news-meta">⭐ 253 stars | GitHub Trending | 14小时前</div>
+            <div class="news-content">
+                革命性技术突破：通过NVMe-to-GPU直连技术绕过CPU瓶颈，在单张RTX 3090显卡上成功运行Llama 3.1 70B模型。这一技术大幅降低了大模型推理的硬件门槛，为个人开发者和小团队提供了新可能。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-vc">💎 VC观点</span>
+            <span class="news-tag tag-hot">a16z</span>
+            <div class="news-title">
+                <a href="https://news.ycombinator.com/item?id=47095105">a16z合伙人：AI将无法"vibe code"一切</a>
+            </div>
+            <div class="news-meta">📊 144 points | 💬 205 comments | 1天前</div>
+            <div class="news-content">
+                a16z合伙人发表观点，认为行业对AI编程能力的预期过于乐观。他指出，虽然AI辅助编程工具发展迅速，但认为未来将完全通过"vibing"（自然语言描述）来编写所有代码的理论是错误的。这一观点引发了技术社区关于AI编程未来的激烈讨论。
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">💎 VC观点精选（Top 20机构）</div>
+        
+        <div class="vc-highlight">
+            <div class="news-item">
+                <span class="news-tag tag-vc">💎 a16z</span>
+                <div class="news-title">
+                    <a href="https://a16z.com/news-content/">AI改变我们构建什么和谁来构建，但不改变需要构建多少</a>
+                </div>
+                <div class="news-content">
+                    a16z最新观点指出，AI正在重塑软件开发的方式和参与者，但并未减少需要构建的软件总量。他们强调，AI工具的普及实际上会催生更多的软件需求，创业公司应该关注如何利用AI提升效率，而不是担心AI会减少机会。
+                </div>
+            </div>
+        </div>
+
+        <div class="vc-highlight">
+            <div class="news-item">
+                <span class="news-tag tag-vc">💎 a16z</span>
+                <div class="news-title">
+                    <a href="https://a16z.com/news-content/">消费级AI平台如何大规模盈利：广告可能是关键</a>
+                </div>
+                <div class="news-content">
+                    a16z深度分析了消费级AI平台的商业化路径，认为要实现数十亿用户规模，广告可能是必不可少的盈利模式。这一观点为AI创业公司的商业模式设计提供了重要参考。
+                </div>
+            </div>
+        </div>
+
+        <div class="vc-highlight">
+            <div class="news-item">
+                <span class="news-tag tag-vc">💎 NFX</span>
+                <div class="news-title">
+                    <a href="https://www.nfx.com/library">云之上的技术栈（The Stack Above the Cloud）</a>
+                </div>
+                <div class="news-meta">作者：Morgan Beller | 2026年2月</div>
+                <div class="news-content">
+                    NFX合伙人Morgan Beller发布重要文章，探讨云计算之上新的技术栈演进。文章分析了AI时代基础设施的变化，以及这些变化为创业公司带来的新机会。强调了在AI原生应用时代，开发者需要重新思考架构设计。
+                </div>
+            </div>
+        </div>
+
+        <div class="vc-highlight">
+            <div class="news-item">
+                <span class="news-tag tag-vc">💎 NFX</span>
+                <div class="news-title">
+                    <a href="https://www.nfx.com/post/guided-ai-agents-turbocharge-smb">引导式AI Agents：为中小企业增压</a>
+                </div>
+                <div class="news-content">
+                    NFX最新研究指出，引导式AI Agent（Guided AI Agents）将成为中小企业数字化转型的关键。不同于完全自主的AI Agent，引导式Agent在保持高效自动化的同时，提供了人类必要的控制和监督能力，更适合中小企业的实际需求。
+                </div>
+            </div>
+        </div>
+
+        <div class="vc-highlight">
+            <div class="news-item">
+                <span class="news-tag tag-vc">💎 NFX</span>
+                <div class="news-title">
+                    <a href="https://www.nfx.com/post/ai-workforce-is-here">AI劳动力已来：新劳动力市场的崛起</a>
+                </div>
+                <div class="news-content">
+                    NFX发布重磅报告，宣称"AI劳动力时代"已经到来。报告详细分析了AI如何形成新的劳动力市场，企业如何整合AI员工，以及这一趋势对未来工作的深远影响。这被视为理解AI经济转型的必读文章。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">🚀 AI技术突破</div>
+        
+        <div class="news-item">
+            <span class="news-tag tag-ai">AI模型</span>
+            <div class="news-title">
+                <a href="https://www.anuragk.com/blog/posts/Taalas.html">Taalas如何将LLM"打印"到芯片上？</a>
+            </div>
+            <div class="news-meta">📊 148 points | 💬 75 comments | 9小时前</div>
+            <div class="news-content">
+                深度技术解析：Taalas公司的创新方法将大语言模型直接"印刷"到定制芯片上，实现了前所未有的推理速度和能效比。这种硬件-软件协同优化的方式可能代表AI芯片发展的新方向。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-ai">开源项目</span>
+            <div class="news-title">
+                <a href="https://github.com/tnm/zclaw">zclaw：888 KB内的个人AI助手，运行在ESP32上</a>
+            </div>
+            <div class="news-meta">⭐ 179 stars | 💬 97 comments | 15小时前</div>
+            <div class="news-content">
+                惊人的工程成就：在不到1MB的代码空间内实现完整的个人AI助手，能在ESP32微控制器上运行。展示了边缘AI的极限可能性，对IoT设备的AI能力具有重要启示。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-ai">AI Agent</span>
+            <div class="news-title">
+                <a href="https://github.com/anthropics/claude-code">Anthropic发布Claude Code：命令行AI编程工具</a>
+            </div>
+            <div class="news-meta">⭐ GitHub Trending | AI Coding</div>
+            <div class="news-content">
+                Anthropic官方发布Claude Code，一款终端AI编程助手。它能理解代码库，通过自然语言执行日常任务、解释复杂代码、处理git工作流。这是继GitHub Copilot后，主流AI公司推出的又一编程工具。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-ai">AI Agent</span>
+            <div class="news-title">
+                <a href="https://github.com/vxcontrol/pentagi">Pentagi：全自主AI渗透测试系统</a>
+            </div>
+            <div class="news-meta">⭐ GitHub Trending | Cybersecurity</div>
+            <div class="news-content">
+                Pentagi是一个完全自主的AI Agent系统，能够执行复杂的渗透测试任务。这标志着AI在网络安全领域的应用进入新阶段，从辅助工具升级为能独立完成专业任务的系统。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-ai">Knowledge Graph</span>
+            <div class="news-title">
+                <a href="https://github.com/abhigyanpatwari/GitNexus">GitNexus：零服务器代码智能引擎</a>
+            </div>
+            <div class="news-meta">⭐ 1,223 stars | TypeScript | 132 stars today</div>
+            <div class="news-content">
+                GitNexus完全在浏览器端运行，将GitHub仓库或ZIP文件转化为交互式知识图谱，并内置Graph RAG Agent。这种客户端架构既保护了代码隐私，又提供了强大的代码探索能力。
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">💰 融资动态</div>
+        
+        <div class="news-item">
+            <span class="news-tag tag-funding">IPO</span>
+            <span class="news-tag tag-vc">Y Combinator</span>
+            <div class="news-title">
+                <a href="https://www.ycombinator.com/blog">印度电商平台Meesho上市（YC S16）</a>
+            </div>
+            <div class="news-meta">Y Combinator官方博客 | 2025年12月</div>
+            <div class="news-content">
+                YC孵化的印度电商平台Meesho今日上市。从2016年加入YC到IPO，他们构建了印度最大的电商平台之一，赋能数百万小商户发展业务。这是YC在印度市场的又一成功案例。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-funding">IPO</span>
+            <span class="news-tag tag-vc">Y Combinator</span>
+            <div class="news-title">
+                <a href="https://www.ycombinator.com/blog">Groww上市：YC首家在印度上市的公司</a>
+            </div>
+            <div class="news-meta">Y Combinator官方博客 | 2025年11月</div>
+            <div class="news-content">
+                印度领先数字投资平台Groww今日上市，成为YC首家在印度上市的公司。数千万用户使用Groww投资股票、共同基金和ETF。这标志着YC在新兴市场投资策略的成功。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-funding">超级轮次</span>
+            <span class="news-tag tag-vc">a16z</span>
+            <div class="news-title">
+                <a href="https://a16z.com/news-content/">a16z募集超150亿美元新基金</a>
+            </div>
+            <div class="news-content">
+                a16z宣布募集超过150亿美元的新风险投资基金，将投资于AI、加密货币、生物技术、健康、基础设施和成长期公司。这是a16z历史上最大规模的募资之一，显示出顶级VC对科技创新的持续信心。
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">🏢 企业新闻</div>
+        
+        <div class="news-item">
+            <span class="news-tag tag-product">产品发布</span>
+            <div class="news-title">
+                <a href="https://github.com/cloudflare/agents">Cloudflare推出AI Agent平台</a>
+            </div>
+            <div class="news-meta">GitHub | Cloudflare官方</div>
+            <div class="news-content">
+                Cloudflare发布官方AI Agent开发和部署平台，允许开发者在Cloudflare的全球网络上构建和运行AI Agent。这为边缘计算和AI结合提供了新的基础设施选择。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-product">开源</span>
+            <div class="news-title">
+                <a href="https://github.com/huggingface/skills">Hugging Face发布Skills项目</a>
+            </div>
+            <div class="news-meta">GitHub Trending | AI Infrastructure</div>
+            <div class="news-content">
+                Hugging Face推出Skills项目，旨在标准化AI模型的能力定义和评估。这个开源项目可能成为AI能力评估的行业标准，影响未来模型的开发和选择。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-product">工具</span>
+            <div class="news-title">
+                <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools">AI工具系统提示词大全开源</a>
+            </div>
+            <div class="news-meta">GitHub Trending</div>
+            <div class="news-content">
+                开源项目收集了Cursor、Claude Code、Windsurf、Devin AI等数十款主流AI编程工具的完整系统提示词、内部工具和AI模型信息。这为理解和优化AI工具使用提供了宝贵资源。
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">📊 行业分析</div>
+        
+        <div class="news-item">
+            <span class="news-tag tag-vc">💎 a16z</span>
+            <div class="news-title">
+                <a href="https://a16z.com/news-content/">AI原生创业公司商业模式研究</a>
+            </div>
+            <div class="news-content">
+                a16z发布深度报告，分析AI原生创业公司如何通过专有数据、垂直整合和创新商业模式建立护城河。报告指出，在基础模型快速进化的时代，持续的差异化能力至关重要。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-vc">💎 a16z</span>
+            <div class="news-title">
+                <a href="https://a16z.com/news-content/">企业AI应用留存率基准报告</a>
+            </div>
+            <div class="news-content">
+                a16z发布最新研究，打破"AI公司留存率更差"的迷思。数据显示，AI企业应用的留存率并不必然低于传统SaaS，关键在于产品是否真正解决核心问题。这为AI创业公司提供了重要的产品设计指导。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-vc">💎 NFX</span>
+            <div class="news-title">
+                <a href="https://www.nfx.com/post/stackable-business-models">AI时代的可堆叠商业模式</a>
+            </div>
+            <div class="news-content">
+                NFX提出"可堆叠商业模式"（Stackable Business Models）概念，分析AI时代创业公司如何通过叠加多个价值层来构建更强的竞争优势和盈利能力。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-vc">💎 First Round</span>
+            <div class="news-title">
+                <a href="https://review.firstround.com/">产品市场契合之路（Paths to Product-Market Fit）</a>
+            </div>
+            <div class="news-content">
+                First Round合伙人Todd Jackson访谈系列，深入探讨创业公司实现产品市场契合（PMF）过程中的关键决策时刻。这个系列为早期创业者提供了宝贵的第一手经验。
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">🔥 社区热议</div>
+        
+        <div class="news-item">
+            <span class="news-tag tag-hot">热议</span>
+            <div class="news-title">
+                <a href="https://news.ycombinator.com/item?id=47096253">Karpathy：Claws成为LLM Agent之上的新层</a>
+            </div>
+            <div class="news-meta">📊 308 points | 💬 742 comments | Twitter</div>
+            <div class="news-content">
+                AI大神Andrej Karpathy在Twitter上表示，"Claws"（工具调用能力）正在成为LLM Agent之上的新架构层。这一观点引发了关于AI Agent架构演进的大规模讨论，获得了超过700条评论。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-hot">热议</span>
+            <div class="news-title">
+                <a href="https://news.ycombinator.com/item?id=47091419">保持Android开放</a>
+            </div>
+            <div class="news-meta">📊 2,089 points | 💬 699 comments | F-Droid</div>
+            <div class="news-content">
+                F-Droid发起"保持Android开放"运动，呼吁维护Android生态系统的开放性。这个话题在HN上引发了超过2000个赞和700条评论，成为社区最热议的话题之一。
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag tag-hot">隐私</span>
+            <div class="news-title">
+                <a href="https://news.ycombinator.com/item?id=47098245">我验证了LinkedIn身份，这是我交出的信息</a>
+            </div>
+            <div class="news-meta">📊 1,284 points | 💬 438 comments | 1天前</div>
+            <div class="news-content">
+                深度分析LinkedIn身份验证流程中收集的个人信息，引发了关于平台隐私政策和数据收集边界的广泛讨论。这篇文章获得了超过1200个赞，成为隐私话题的热点。
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>📧 本邮件由AI自动收集和整理</p>
+        <p>💡 新闻来源：Hacker News, GitHub Trending, TechCrunch, a16z, NFX, First Round, Y Combinator 等</p>
+        <p>🔗 查看网页版：<a href="https://calvin.huang@163.com.github.io/ai-news/">AI News Archive</a></p>
+        <p style="margin-top: 20px; color: #95a5a6;">
+            © 2026 AI Evening News | Powered by Claude
+        </p>
+    </div>
+</body>
+</html>
