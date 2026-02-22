@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI早报 - February 22, 2026</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+            margin: -30px -30px 30px -30px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .subtitle {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        .section {
+            margin: 30px 0;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #667eea;
+            border-left: 4px solid #667eea;
+            padding-left: 12px;
+            margin-bottom: 20px;
+        }
+        .news-item {
+            background-color: #f8f9fa;
+            border-left: 3px solid #667eea;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .news-item.vc-insight {
+            background-color: #fff8e6;
+            border-left-color: #ffc107;
+        }
+        .news-item.top-story {
+            background-color: #e8f4f8;
+            border-left-color: #2196F3;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #667eea;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-right: 8px;
+            font-weight: 500;
+        }
+        .tag.vc {
+            background-color: #ffc107;
+            color: #333;
+        }
+        .tag.funding {
+            background-color: #4caf50;
+        }
+        .tag.product {
+            background-color: #2196F3;
+        }
+        .news-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: #1a1a1a;
+            margin: 10px 0 8px 0;
+        }
+        .news-content {
+            color: #666;
+            margin: 8px 0;
+        }
+        .news-meta {
+            font-size: 12px;
+            color: #999;
+            margin-top: 8px;
+        }
+        .link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+        }
+        .heat {
+            color: #ff6b6b;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📰 AI 早报 · February 22, 2026</h1>
+            <p class="subtitle">AI / VC / Startup 重点新闻汇总</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📌 头条速览</h2>
+            
+            <div class="news-item top-story">
+                <span class="tag">AI模型</span>
+                <div class="news-title">Hacker News 热门：Timeframe 家庭电子墨水屏仪表板</div>
+                <div class="news-content">
+                    开发者分享了自己构建的电子墨水屏家庭仪表板项目，用于显示日程、天气等信息。该项目在 HN 获得 378 分，引发 105 条讨论，展示了 DIY 智能家居的实践案例。
+                </div>
+                <div class="news-meta">
+                    <span class="heat">🔥 热度: 378 points</span> · 
+                    <a href="https://hawksley.org/2026/02/17/timeframe.html" class="link">查看原文</a>
+                </div>
+            </div>
+
+            <div class="news-item top-story">
+                <span class="tag">产品</span>
+                <div class="news-title">开源 TikTok 替代品 Loops 发布</div>
+                <div class="news-content">
+                    Loops 是一个联邦化的开源短视频平台，定位为去中心化的 TikTok 替代方案。项目在 HN 获得 113 分，72 条讨论，反映了社区对去中心化社交媒体的持续关注。
+                </div>
+                <div class="news-meta">
+                    <span class="heat">🔥 热度: 113 points</span> · 
+                    <a href="https://joinloops.org/" class="link">查看原文</a>
+                </div>
+            </div>
+
+            <div class="news-item top-story">
+                <span class="tag product">技术</span>
+                <div class="news-title">macOS 本地优先 Linux MicroVMs - Shuru</div>
+                <div class="news-content">
+                    Show HN 项目：为 macOS 打造的本地优先 Linux 微虚拟机方案，提供轻量级的开发环境。获得 83 分和 24 条讨论。
+                </div>
+                <div class="news-meta">
+                    <span class="heat">🔥 热度: 83 points</span> · 
+                    <a href="https://shuru.run" class="link">查看原文</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">💎 VC 观点精选</h2>
+            
+            <div class="news-item vc-insight">
+                <span class="tag vc">a16z</span>
+                <div class="news-title">a16z: "工厂即产品"模式在风险投资支持的制造业中的应用</div>
+                <div class="news-content">
+                    a16z 探讨了制造业初创企业的新范式——将工厂本身作为产品来打造。这种模式强调生产能力和制造流程的创新，而非仅关注最终产品，为硬件和工业科技初创企业提供了新的竞争优势思路。
+                </div>
+                <div class="news-meta">
+                    <a href="https://a16z.com/news-content/" class="link">查看原文</a>
+                </div>
+            </div>
+
+            <div class="news-item vc-insight">
+                <span class="tag vc">a16z</span>
+                <div class="news-title">a16z: 消费级 AI 平台如何大规模变现</div>
+                <div class="news-content">
+                    分析了消费级 AI 平台的商业模式，认为广告可能是触达数十亿用户的关键。文章探讨了 ChatGPT、Gemini、Claude 等平台的增长策略，以及为何订阅模式可能无法支撑最大规模的用户增长。
+                </div>
+                <div class="news-meta">
+                    <a href="https://a16z.com/news-content/" class="link">查看原文</a>
+                </div>
+            </div>
+
+            <div class="news-item vc-insight">
+                <span class="tag vc">a16z</span>
+                <div class="news-title">a16z: AI 改变我们构建什么和谁来构建，但不改变需要构建多少</div>
+                <div class="news-content">
+                    反驳了"AI 会减少软件需求"的观点。文章认为 AI 降低了开发门槛，会催生更多软件需求而非减少，创造者的数量会爆发式增长，软件供给和需求将同步扩张。
+                </div>
+                <div class="news-meta">
+                    <a href="https://a16z.com/news-content/" class="link">查看原文</a>
+                </div>
+            </div>
+
+            <div class="news-item vc-insight">
+                <span class="tag vc">Lightspeed</span>
+                <div class="news-title">Lightspeed: Netskope 创始人 Sanjay Beri 的创业历程</div>
+                <div class="news-content">
+                    Lightspeed 分享了网络安全公司 Netskope（估值 75 亿美元）创始人 Sanjay Beri 的故事。强调了云安全从不被看好到成为主流的转变，以及"团队优先"文化在吸引顶尖人才和构建持久企业中的作用。
+                </div>
+                <div class="news-meta">
+                    <a href="https://lsvp.com/stories/" class="link">查看原文</a>
+                </div>
+            </div>
+
+            <div class="news-item vc-insight">
+                <span class="tag vc">NFX</span>
+                <div class="news-title">NFX: "云之上的技术栈" - AI 基础设施新层次</div>
+                <div class="news-content">
+                    Morgan Beller 探讨了 AI 时代云之上的新技术栈。随着 AI agent 和工作流的普及，在传统云服务之上需要新的抽象层和工具链，为初创企业创造了新的基础设施投资机会。
+                </div>
+                <div class="news-meta">
+                    <a href="https://www.nfx.com/post/stack-above-the-cloud" class="link">查看原文</a>
+                </div>
+            </div>
+
+            <div class="news-item vc-insight">
+                <span class="tag vc">NFX</span>
+                <div class="news-title">NFX: 引导式 AI Agent 为中小企业带来增压效应</div>
+                <div class="news-content">
+                    James Currier 认为完全自主的 AI agent 还不成熟，但"引导式 agent"（人机协作）已经可以为 SMB 带来巨大价值。这类产品在垂直领域有明确的产品化路径和变现模型。
+                </div>
+                <div class="news-meta">
+                    <a href="https://www.nfx.com/post/guided-ai-agents-turbocharge-smb" class="link">查看原文</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🚀 GitHub Trending AI 项目</h2>
+            
+            <div class="news-item">
+                <span class="tag">AI Agent</span>
+                <div class="news-title">Hugging Face Skills - AI 技能库</div>
+                <div class="news-content">
+                    Hugging Face 推出的 AI 技能库项目，为 AI 模型提供可复用的技能模块，简化 AI 应用开发流程。
+                </div>
+                <div class="news-meta">
+                    <a href="https://github.com/huggingface/skills" class="link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag">安全</span>
+                <div class="news-title">Pentagi - 全自主 AI 渗透测试系统</div>
+                <div class="news-content">
+                    vxcontrol 发布的完全自主的 AI Agent 系统，能够执行复杂的渗透测试任务。展示了 AI 在网络安全领域的实战能力。
+                </div>
+                <div class="news-meta">
+                    <a href="https://github.com/vxcontrol/pentagi" class="link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag">开发工具</span>
+                <div class="news-title">Claude Code - Anthropic 终端代码助手</div>
+                <div class="news-content">
+                    Anthropic 推出的命令行代码助手，运行在终端中，能够理解代码库、执行日常任务、解释复杂代码并处理 git 工作流，全部通过自然语言命令完成。
+                </div>
+                <div class="news-meta">
+                    <a href="https://github.com/anthropics/claude-code" class="link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag">知识图谱</span>
+                <div class="news-title">GitNexus - 零服务器代码智能引擎</div>
+                <div class="news-content">
+                    完全在浏览器中运行的知识图谱创建工具。上传 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，内置 Graph RAG Agent。非常适合代码探索。今日获 419 stars。
+                </div>
+                <div class="news-meta">
+                    <span class="heat">🔥 热度: 419 stars today</span> · 
+                    <a href="https://github.com/abhigyanpatwari/GitNexus" class="link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag">开发工具</span>
+                <div class="news-title">AI 工具系统提示词大全</div>
+                <div class="news-content">
+                    完整收录了 Cursor、Windsurf、Devin AI、Claude Code、Replit 等热门 AI 开发工具的系统提示词和内部工具，为开发者提供参考。
+                </div>
+                <div class="news-meta">
+                    <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools" class="link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag">Agent</span>
+                <div class="news-title">Cloudflare Agents - 在 Cloudflare 上构建和部署 AI Agent</div>
+                <div class="news-content">
+                    Cloudflare 推出的 AI Agent 平台，允许开发者在其边缘网络上构建和部署 AI Agent，享受全球分布式的低延迟优势。
+                </div>
+                <div class="news-meta">
+                    <a href="https://github.com/cloudflare/agents" class="link">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">💰 融资动态</h2>
+            
+            <div class="news-item">
+                <span class="tag funding">融资</span>
+                <div class="news-title">a16z 募集超过 150 亿美元新基金</div>
+                <div class="news-content">
+                    a16z 宣布募集超过 150 亿美元的新风险投资基金，将投资于 AI、加密货币、生物技术、医疗健康、基础设施和成长期项目。此举强化了美国技术领导地位和全球竞争力。
+                </div>
+                <div class="news-meta">
+                    <a href="https://a16z.com/news-content/" class="link">查看原文</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag funding">晋升</span>
+                <div class="news-title">a16z 晋升两位合伙人</div>
+                <div class="news-content">
+                    Matt Bornstein 和 Alex Immerman 晋升为 a16z 普通合伙人，两人分别专注于 AI 基础设施和企业软件领域。
+                </div>
+                <div class="news-meta">
+                    <a href="https://a16z.com/news-content/" class="link">查看原文</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag funding">合伙人</span>
+                <div class="news-title">Raghu Raghuram 加入 a16z 担任管理合伙人</div>
+                <div class="news-content">
+                    VMware 前 CEO Raghu Raghuram 加入 a16z 担任管理合伙人和普通合伙人。Raghu 带来了丰富的企业软件扩展经验和文化建设能力。
+                </div>
+                <div class="news-meta">
+                    <a href="https://a16z.com/news-content/" class="link">查看原文</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🏢 企业新闻</h2>
+            
+            <div class="news-item">
+                <span class="tag product">产品</span>
+                <div class="news-title">OpenBB - AI Agent 的金融数据平台</div>
+                <div class="news-content">
+                    OpenBB 为分析师、量化研究员和 AI Agent 提供金融数据平台，在 GitHub trending 榜上表现活跃。
+                </div>
+                <div class="news-meta">
+                    <a href="https://github.com/OpenBB-finance/OpenBB" class="link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag">技术</span>
+                <div class="news-title">FossFLOW - 制作精美的等距基础设施图</div>
+                <div class="news-content">
+                    stan-smith 推出的工具，用于创建精美的等距风格基础设施架构图，受到开发者欢迎。
+                </div>
+                <div class="news-meta">
+                    <a href="https://github.com/stan-smith/FossFLOW" class="link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag">工具</span>
+                <div class="news-title">VentureBeat: 现代审计循环 - Shadow Mode、Drift Alerts 和审计日志</div>
+                <div class="news-content">
+                    VentureBeat 文章探讨了 AI 系统治理的新方法。传统季度审计无法跟上实时变化的 AI 模型，需要 shadow mode（影子模式）、drift alerts（漂移警报）等实时监控机制。
+                </div>
+                <div class="news-meta">
+                    <a href="https://venturebeat.com/category/ai" class="link">查看原文</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📊 行业分析</h2>
+            
+            <div class="news-item">
+                <span class="tag">报告</span>
+                <div class="news-title">a16z: fal 发布生成媒体现状报告</div>
+                <div class="news-content">
+                    fal 推理引擎发布生成媒体深度报告，分析了生成式 AI 在媒体领域的显著进展。a16z 表示 fal 拥有独特的观察视角，其推理引擎为众多生成媒体应用提供支持。
+                </div>
+                <div class="news-meta">
+                    <a href="https://a16z.com/news-content/" class="link">查看原文</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag">分析</span>
+                <div class="news-title">a16z: 企业 AI 战场现状数据分析</div>
+                <div class="news-content">
+                    a16z 发布企业 AI 领域的最新数据分析，揭示哪些公司正在赢得企业 AI 市场，以及当前竞争格局的演变趋势。
+                </div>
+                <div class="news-meta">
+                    <a href="https://a16z.com/news-content/" class="link">查看原文</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag">趋势</span>
+                <div class="news-title">HN 热议：数据库事务详解</div>
+                <div class="news-content">
+                    PlanetScale 发布的数据库事务详解文章在 HN 获得 189 分，47 条讨论。随着 AI 应用对数据一致性要求提高，数据库基础知识重新受到关注。
+                </div>
+                <div class="news-meta">
+                    <span class="heat">🔥 热度: 189 points</span> · 
+                    <a href="https://planetscale.com/blog/database-transactions" class="link">查看原文</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag">安全</span>
+                <div class="news-title">在二进制文件中隐藏后门，让 AI 和 Ghidra 来查找</div>
+                <div class="news-content">
+                    Quesma 在约 40MB 的二进制文件中隐藏后门，然后测试 AI 和逆向工程工具 Ghidra 的检测能力。在 HN 获得 195 分，86 条讨论，引发了关于 AI 在代码安全审计中应用前景的热烈讨论。
+                </div>
+                <div class="news-meta">
+                    <span class="heat">🔥 热度: 195 points</span> · 
+                    <a href="https://quesma.com/blog/introducing-binaryaudit/" class="link">查看原文</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>本邮件由 OpenClaw AI 自动生成 · February 22, 2026</p>
+            <p>数据来源：Hacker News, GitHub Trending, TechCrunch, VentureBeat, a16z, Lightspeed, NFX, First Round, Greylock</p>
+        </div>
+    </div>
+</body>
+</html>
