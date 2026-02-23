@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1e40af;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2563eb;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .news-item {
+            background-color: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .vc-highlight {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+        }
+        .news-tag {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: #1e40af;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .vc-tag {
+            background-color: #fde68a;
+            color: #92400e;
+        }
+        .news-title {
+            font-weight: 700;
+            font-size: 1.1em;
+            margin: 10px 0;
+            color: #1e293b;
+        }
+        .news-summary {
+            color: #475569;
+            margin: 10px 0;
+        }
+        .news-meta {
+            font-size: 0.9em;
+            color: #64748b;
+            margin-top: 10px;
+        }
+        .news-link {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .news-link:hover {
+            text-decoration: underline;
+        }
+        .heat {
+            color: #dc2626;
+            font-weight: 600;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .date {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📰 AI早报 - AI/VC/Startup 重点新闻</h1>
+            <p class="date">2026-02-23 | 过去12小时全球动态</p>
+        </div>
+
+        <h2>🎯 头条速览</h2>
+        
+        <div class="news-item">
+            <span class="news-tag">🚀 AI技术</span>
+            <div class="news-title">Anthropic Claude 更新冲击 IBM：COBOL 代码现代化</div>
+            <div class="news-summary">
+                Anthropic 最新更新增强了对 COBOL 的支持能力，可能改变传统企业软件现代化格局。IBM 股价受到冲击，市场关注 AI 如何重塑遗留系统维护。这标志着 AI 开始深入传统企业 IT 领域。
+            </div>
+            <div class="news-meta">
+                <span class="heat">🔥 热度: 1,018 points</span> | 
+                <a href="https://www.zerohedge.com/markets/ibm-plunges-after-anthropics-latest-update-takes-cobol" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag">🛠️ 开源项目</span>
+            <div class="news-title">Ladybird 浏览器宣布采用 Rust</div>
+            <div class="news-summary">
+                独立开源浏览器项目 Ladybird 宣布采用 Rust 编程语言重构核心组件。这是继 Firefox 之后，又一个重要浏览器项目拥抱 Rust。此举旨在提高安全性和性能，社区反响热烈。
+            </div>
+            <div class="news-meta">
+                <span class="heat">🔥 热度: 949 points | 518 讨论</span> | 
+                <a href="https://ladybird.org/posts/adopting-rust/" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag">🏭 硬件</span>
+            <div class="news-title">ASML 发布 EUV 光源突破：2030 年芯片产量提升 50%</div>
+            <div class="news-summary">
+                全球最大光刻机制造商 ASML 宣布 EUV（极紫外光）光源技术重大进展，预计到 2030 年可使芯片产量提升 50%。这对 AI 芯片供应链至关重要，将缓解高端制程产能瓶颈。
+            </div>
+            <div class="news-meta">
+                <span class="heat">🔥 热度: 167 points | 43 讨论</span> | 
+                <a href="https://www.reuters.com/world/china/asml-unveils-euv-light-source-advance-that-could-yield-50-more-chips-by-2030-2026-02-23/" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <h2>💎 VC 观点精选</h2>
+        
+        <div class="news-item vc-highlight">
+            <span class="news-tag vc-tag">💎 a16z 观点</span>
+            <div class="news-title">Marc Andreessen: AI 编程如同 YouTube 革命</div>
+            <div class="news-summary">
+                a16z 创始人 Marc Andreessen 撰文指出，YouTube 2005 年推出时并未填补明显的内容空白，但 20 年后成为 5500 亿美元巨头。他认为 AI 编程工具将遵循同样路径 - 当前看似"解决方案寻找问题"，实际将创造全新软件开发范式。关键观点：低门槛创作工具会产生意想不到的价值。
+            </div>
+            <div class="news-meta">
+                <span>a16z | Marc Andreessen</span> | 
+                <a href="https://a16z.com/news-content/" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <div class="news-item vc-highlight">
+            <span class="news-tag vc-tag">💎 a16z 投资</span>
+            <div class="news-title">a16z 募集超 150 亿美元新基金：押注 AI、加密、生物科技</div>
+            <div class="news-summary">
+                Andreessen Horowitz 宣布完成超过 150 亿美元的新一轮基金募集，覆盖 AI、加密货币、生物科技、医疗健康、基础设施和成长期投资。这是 a16z 历史上最大规模募资，强化美国科技创新领导地位和全球竞争力的承诺。显示顶级 VC 对 AI 时代的长期信心。
+            </div>
+            <div class="news-meta">
+                <span>a16z</span> | 
+                <a href="https://a16z.com/news-content/" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <div class="news-item vc-highlight">
+            <span class="news-tag vc-tag">💎 a16z 趋势</span>
+            <div class="news-title">AI Agents 重塑企业软件：垂直领域的分销革命</div>
+            <div class="news-summary">
+                a16z 最新分析指出，AI 原生初创公司通过在企业成立之初就提供服务，正在改变企业软件格局。关键趋势：(1) 针对新成立公司的"greenfield"策略；(2) 在传统软件商进入前抢占分销渠道；(3) 劳动力正在被软件化。这解释了为何 AI 应用公司成长速度远超 SaaS 时代。
+            </div>
+            <div class="news-meta">
+                <span>a16z | 企业 AI 分析</span> | 
+                <a href="https://a16z.com/news-content/" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <div class="news-item vc-highlight">
+            <span class="news-tag vc-tag">💎 a16z 人事</span>
+            <div class="news-title">前 VMware CEO Raghu Raghuram 加入 a16z 担任管理合伙人</div>
+            <div class="news-summary">
+                a16z 宣布前 VMware CEO Raghu Raghuram 加入担任管理合伙人和普通合伙人。Raghu 在企业软件领域有超过 15 年经验，将帮助 a16z 投资组合公司扩展规模、编码企业文化和建立可重复的 GTM 系统。这一招募显示 a16z 在企业 AI 领域的雄心。
+            </div>
+            <div class="news-meta">
+                <span>a16z | 重要人事</span> | 
+                <a href="https://a16z.com/news-content/" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <div class="news-item vc-highlight">
+            <span class="news-tag vc-tag">💎 Y Combinator</span>
+            <div class="news-title">YC 印度首家 IPO：Meesho 和 Groww 成功上市</div>
+            <div class="news-summary">
+                YC 投资的两家印度公司 Meesho（电商平台）和 Groww（数字投资平台）近期成功上市。Meesho 从 S16 批次成长为印度最大电商平台之一，赋能数百万小商家。Groww 则成为印度领先的数字投资平台，数千万用户使用。这标志着 YC 在印度市场的成功。
+            </div>
+            <div class="news-meta">
+                <span>Y Combinator | 印度市场</span> | 
+                <a href="https://www.ycombinator.com/blog" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <h2>🚀 AI 技术突破</h2>
+        
+        <div class="news-item">
+            <span class="news-tag">🤖 AI 模型</span>
+            <div class="news-title">AI Timeline 工具展示 171 个 LLMs：从 Transformer 到 GPT-5.3</div>
+            <div class="news-summary">
+                Show HN 项目发布交互式 AI 时间线工具，覆盖从 2017 年 Transformer 论文到 2026 年 GPT-5.3 的 171 个大语言模型。可视化展示 AI 模型发展历程，帮助理解技术演进路径。
+            </div>
+            <div class="news-meta">
+                <span class="heat">🔥 热度: 113 points | 46 讨论</span> | 
+                <a href="https://llm-timeline.com/" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag">💻 开发工具</span>
+            <div class="news-title">GitHub Trending: AI Agent 系统提示词大公开</div>
+            <div class="news-summary">
+                开源项目收集了 Cursor、Claude Code、Devin AI、Windsurf、v0 等主流 AI 编程工具的完整系统提示词、内部工具和 AI 模型信息。为开发者提供了解 AI 代码助手工作原理的宝贵资源。
+            </div>
+            <div class="news-meta">
+                <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools" class="news-link" target="_blank">查看项目</a>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag">🧠 AI Agents</span>
+            <div class="news-title">Hugging Face 发布 Skills 框架</div>
+            <div class="news-summary">
+                Hugging Face 在 GitHub 上发布新的 Skills 框架，用于构建和管理 AI Agent 能力。项目获得高度关注，为多模态 AI 应用提供标准化技能管理方案。
+            </div>
+            <div class="news-meta">
+                <a href="https://github.com/huggingface/skills" class="news-link" target="_blank">查看项目</a>
+            </div>
+        </div>
+
+        <h2>💰 融资动态</h2>
+        
+        <div class="news-item">
+            <span class="news-tag">💵 招聘</span>
+            <div class="news-title">SIM (YC X25) 在旧金山招聘顶尖工程师</div>
+            <div class="news-summary">
+                Y Combinator X25 批次公司 SIM 正在旧金山招聘软件工程师（平台方向）。作为最新一批 YC 公司，正处于快速成长期。
+            </div>
+            <div class="news-meta">
+                <a href="https://www.ycombinator.com/companies/sim/jobs" class="news-link" target="_blank">查看职位</a>
+            </div>
+        </div>
+
+        <h2>🏢 企业新闻</h2>
+        
+        <div class="news-item">
+            <span class="news-tag">🔐 监管</span>
+            <div class="news-title">Binance 解雇发现 17 亿美元加密货币流向伊朗的员工</div>
+            <div class="news-summary">
+                《纽约时报》报道，全球最大加密货币交易所 Binance 解雇了发现 17 亿美元加密货币被发送到伊朗的员工。此事引发对加密货币合规监管和内部举报者保护的讨论。
+            </div>
+            <div class="news-meta">
+                <span class="heat">🔥 热度: 240 points | 108 讨论</span> | 
+                <a href="https://www.nytimes.com/2026/02/23/technology/binance-employees-iran-firings.html" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag">🚗 自动驾驶</span>
+            <div class="news-title">低于 200 美元的激光雷达可能重塑汽车传感器经济学</div>
+            <div class="news-summary">
+                IEEE Spectrum 报道，新型固态激光雷达技术成本降至 200 美元以下，可能彻底改变 ADAS（高级驾驶辅助系统）传感器市场。价格大幅下降将加速自动驾驶技术普及。
+            </div>
+            <div class="news-meta">
+                <span class="heat">🔥 热度: 363 points | 492 讨论</span> | 
+                <a href="https://spectrum.ieee.org/solid-state-lidar-microvision-adas" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <h2>📊 开源项目与工具</h2>
+        
+        <div class="news-item">
+            <span class="news-tag">🗄️ 数据库</span>
+            <div class="news-title">PgDog：无需修改应用即可扩展 Postgres</div>
+            <div class="news-summary">
+                Show HN 项目 PgDog 提供透明的 PostgreSQL 扩展方案，无需修改应用代码即可实现数据库水平扩展。开发者反馈积极，认为这是解决 Postgres 扩展痛点的实用工具。
+            </div>
+            <div class="news-meta">
+                <span class="heat">🔥 热度: 133 points | 33 讨论</span> | 
+                <a href="https://github.com/pgdogdev/pgdog" class="news-link" target="_blank">查看项目</a>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag">🤖 农业科技</span>
+            <div class="news-title">Sowbot：开源硬件农业机器人（ROS2 + RTK GPS）</div>
+            <div class="news-summary">
+                英国团队开源农业机器人 Sowbot，基于 ROS2 和 RTK GPS 技术。提供完整硬件设计和软件代码，降低精准农业技术门槛。AI + 机器人 + 农业的交叉创新。
+            </div>
+            <div class="news-meta">
+                <span class="heat">🔥 热度: 83 points | 33 讨论</span> | 
+                <a href="https://sowbot.co.uk/" class="news-link" target="_blank">查看项目</a>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag">🔍 网络工具</span>
+            <div class="news-title">Babyshark：Wireshark 简化版（终端 UI）</div>
+            <div class="news-summary">
+                开源项目 Babyshark 为 PCAP 文件分析提供友好的终端界面，降低 Wireshark 学习曲线。对网络调试和安全分析人员很实用。
+            </div>
+            <div class="news-meta">
+                <a href="https://github.com/vignesh07/babyshark" class="news-link" target="_blank">查看项目</a>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag">📊 金融工具</span>
+            <div class="news-title">OpenBB：面向分析师、量化和 AI Agents 的金融数据平台</div>
+            <div class="news-summary">
+                GitHub Trending 项目 OpenBB 提供开源金融数据平台，专为金融分析师、量化研究员和 AI Agent 设计。整合多数据源，提供统一接口。
+            </div>
+            <div class="news-meta">
+                <a href="https://github.com/OpenBB-finance/OpenBB" class="news-link" target="_blank">查看项目</a>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag">💾 Agent 记忆</span>
+            <div class="news-title">memU：为 24/7 主动 Agents 提供记忆系统</div>
+            <div class="news-summary">
+                NevaMind-AI 开源 memU 项目，为像 OpenClaw、Moltbot、Clawdbot 这样的 24/7 运行 AI Agents 提供长期记忆管理。解决 AI Agent 状态持久化和上下文延续问题。
+            </div>
+            <div class="news-meta">
+                <a href="https://github.com/NevaMind-AI/memU" class="news-link" target="_blank">查看项目</a>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag">🗺️ 基础设施</span>
+            <div class="news-title">FossFLOW：制作精美的等距基础设施图表</div>
+            <div class="news-summary">
+                开源工具 FossFLOW 让开发者轻松创建专业的等距风格基础设施架构图。对 DevOps 和架构师很实用。
+            </div>
+            <div class="news-meta">
+                <a href="https://github.com/stan-smith/FossFLOW" class="news-link" target="_blank">查看项目</a>
+            </div>
+        </div>
+
+        <h2>🔥 社区热议</h2>
+        
+        <div class="news-item">
+            <span class="news-tag">🔐 隐私</span>
+            <div class="news-title">年龄验证陷阱：IEEE 警告数据保护风险</div>
+            <div class="news-summary">
+                IEEE Spectrum 深度文章指出，年龄验证技术可能损害所有人的数据保护。在线年龄验证要求用户提交敏感身份信息，创建新的隐私风险和监控基础设施。引发热烈讨论（804 条评论）。
+            </div>
+            <div class="news-meta">
+                <span class="heat">🔥 热度: 1,018 points | 804 讨论</span> | 
+                <a href="https://spectrum.ieee.org/age-verification" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag">👁️ 监控</span>
+            <div class="news-title">美国人正在破坏 Flock 监控摄像头</div>
+            <div class="news-summary">
+                TechCrunch 报道，全美多地出现民众破坏 Flock 车牌识别摄像头的现象。这些摄像头由 Horowitz Foundation 捐赠给警方，避开公共监督程序。引发隐私权与公共安全的激烈辩论。
+            </div>
+            <div class="news-meta">
+                <span class="heat">🔥 热度: 341 points | 216 讨论</span> | 
+                <a href="https://techcrunch.com/2026/02/23/americans-are-destroying-flock-surveillance-cameras/" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <span class="news-tag">📚 学术</span>
+            <div class="news-title">Elsevier 关闭金融期刊引用卡特尔</div>
+            <div class="news-summary">
+                学术出版巨头 Elsevier 被曝运营金融期刊引用卡特尔，通过协调引用人为提升期刊影响因子。丑闻曝光后 Elsevier 关闭相关操作。学术界对论文发表和引用机制的信任危机加深。
+            </div>
+            <div class="news-meta">
+                <span class="heat">🔥 热度: 480 points | 90 讨论</span> | 
+                <a href="https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal" class="news-link" target="_blank">查看原文</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📬 本报告由 AI 自动收集和整理</p>
+            <p>数据来源: Hacker News | GitHub Trending | a16z | TechCrunch | Y Combinator</p>
+            <p>🕐 生成时间: 2026-02-23 22:02:01 UTC</p>
+        </div>
+    </div>
+</body>
+</html>
