@@ -9,280 +9,420 @@
             color: #333;
             max-width: 800px;
             margin: 0 auto;
-            background-color: #f5f7fa;
             padding: 20px;
+            background-color: #f5f7fa;
         }
-        .container {
-            background-color: white;
-            border-radius: 8px;
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             padding: 30px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
         }
-        h1 {
-            color: #1e3a8a;
-            border-bottom: 3px solid #3b82f6;
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .header .date {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
             padding-bottom: 10px;
-            margin-top: 0;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
         }
-        h2 {
-            color: #1e40af;
-            margin-top: 30px;
-            font-size: 20px;
+        .section-title .emoji {
+            margin-right: 10px;
+            font-size: 24px;
         }
         .news-item {
-            margin: 20px 0;
-            padding: 15px;
-            background-color: #f0f9ff;
-            border-left: 4px solid #3b82f6;
-            border-radius: 4px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .news-header {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
         }
         .tag {
             display: inline-block;
-            padding: 3px 10px;
-            margin-right: 8px;
-            border-radius: 12px;
+            padding: 4px 12px;
+            border-radius: 4px;
             font-size: 12px;
-            font-weight: bold;
-            color: white;
+            font-weight: 600;
+            margin-right: 10px;
+            white-space: nowrap;
         }
-        .tag-model { background-color: #10b981; }
-        .tag-funding { background-color: #f59e0b; }
-        .tag-product { background-color: #8b5cf6; }
-        .tag-tool { background-color: #06b6d4; }
-        .tag-discussion { background-color: #ec4899; }
-        .tag-github { background-color: #6366f1; }
+        .tag-ai { background: #e3f2fd; color: #1976d2; }
+        .tag-vc { background: #fff3e0; color: #f57c00; }
+        .tag-funding { background: #e8f5e9; color: #388e3c; }
+        .tag-product { background: #f3e5f5; color: #7b1fa2; }
+        .tag-safety { background: #ffebee; color: #c62828; }
+        .tag-report { background: #e0f2f1; color: #00796b; }
         .news-title {
-            font-size: 16px;
-            font-weight: bold;
-            color: #1e40af;
-            margin: 8px 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        .news-title a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .news-title a:hover {
+            color: #667eea;
         }
         .news-content {
-            color: #4b5563;
-            margin: 8px 0;
+            color: #555;
+            margin: 10px 0;
+            line-height: 1.7;
         }
         .news-meta {
             font-size: 13px;
-            color: #9ca3af;
+            color: #888;
             margin-top: 8px;
         }
-        a {
-            color: #2563eb;
-            text-decoration: none;
+        .highlight {
+            background: #fff9e6;
+            padding: 15px;
+            border-left: 4px solid #ffd700;
+            margin: 10px 0;
+            border-radius: 4px;
         }
-        a:hover {
-            text-decoration: underline;
+        .vc-quote {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            margin: 10px 0;
+            font-style: italic;
+            border-radius: 4px;
         }
         .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e5e7eb;
             text-align: center;
-            color: #9ca3af;
+            padding: 20px;
+            color: #888;
             font-size: 13px;
         }
-        .fire { color: #ef4444; }
+        .trending-badge {
+            display: inline-block;
+            background: #ff4444;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin-left: 8px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>📰 AI晚报 - 2026年02月25日</h1>
-        <p style="color: #6b7280;">精选过去12小时全球AI、VC、Startup重点新闻</p>
+    <div class="header">
+        <h1>📰 AI 晚报 - AI/VC/Startup 重点新闻</h1>
+        <div class="date">2026年2月25日 星期三</div>
+    </div>
 
-        <h2>🚀 AI模型与技术突破</h2>
+    <!-- 头条速览 -->
+    <div class="section">
+        <div class="section-title">
+            <span class="emoji">🔥</span> 头条速览
+        </div>
         
         <div class="news-item">
-            <span class="tag tag-model">模型发布</span>
-            <div class="news-title">Kimi K2.5 - 开源视觉SOTA智能体模型</div>
-            <div class="news-content">
-                Kimi发布K2.5开源视觉智能体模型，在多项基准测试中达到SOTA水平。该模型具备强大的视觉理解和任务执行能力，支持多模态交互。
+            <div class="news-header">
+                <span class="tag tag-safety">AI安全</span>
             </div>
-            <div class="news-meta">
-                🔥 212 points | 💬 66 comments | 
-                <a href="https://www.kimi.com/blog/kimi-k2-5.html" target="_blank">阅读原文</a>
+            <div class="news-title">
+                <a href="https://time.com/7380854/exclusive-anthropic-drops-flagship-safety-pledge/" target="_blank">
+                    Anthropic 放弃核心安全承诺 - 安全政策重大转向
+                </a>
+                <span class="trending-badge">🔥 312点</span>
+            </div>
+            <div class="news-content">
+                Anthropic 宣布放弃其 2023 年制定的 Responsible Scaling Policy (RSP) 核心承诺。该公司此前承诺：除非能提前保证安全措施充分，否则不会训练 AI 系统。新政策转向"透明度优先"和"匹配竞争对手"策略。首席科学官 Jared Kaplan 表示："在竞争对手快速推进的情况下，单方面停止训练并不能帮助任何人。" 这标志着 AI 安全领域的重大政策转变。
+            </div>
+            <div class="news-meta">热度：HN 312 点，134 条讨论 | TIME 独家报道</div>
+        </div>
+
+        <div class="news-item">
+            <div class="news-header">
+                <span class="tag tag-vc">💎 VC观点</span>
+            </div>
+            <div class="news-title">
+                <a href="https://sequoiacap.com/article/2026-this-is-agi/" target="_blank">
+                    Sequoia: "2026: This is AGI" - AGI 已经到来
+                </a>
+            </div>
+            <div class="news-content">
+                Sequoia 合伙人 Pat Grady 和 Sonya Huang 发布重磅观点文章，认为 AGI 已经实现。他们给出功能性定义：<strong>"AGI 就是能够解决问题的能力"</strong>。文章指出长期任务代理（long-horizon agents）是功能性 AGI 的首个实例，编程代理已经证明了这一点。METR 数据显示：代理完成任务的能力每 7 个月翻倍，预计到 2028 年能完成专家一天的工作量，2034 年一年，2037 年一世纪。
+            </div>
+            <div class="vc-quote">
+                "You can 'hire' GPT-5.2 or Claude today. Soon you'll be able to hire an agent for medicine, law, cybersecurity, DevOps, recruiting, and more. The AI applications of 2026 and 2027 will be doers, not just talkers."
+            </div>
+            <div class="news-meta">Sequoia Capital - Tier 1 VC 机构</div>
+        </div>
+
+        <div class="news-item">
+            <div class="news-header">
+                <span class="tag tag-ai">AI模型</span>
+            </div>
+            <div class="news-title">
+                <a href="https://www.inceptionlabs.ai/blog/introducing-mercury-2" target="_blank">
+                    Mercury 2：基于扩散模型的超快推理 LLM，速度超 1000 tokens/秒
+                </a>
+                <span class="trending-badge">🔥 221点</span>
+            </div>
+            <div class="news-content">
+                Inception Labs 发布 Mercury 2，全球最快推理语言模型。关键突破：采用扩散架构替代自回归解码，在 NVIDIA Blackwell GPU 上达到 <strong>1,009 tokens/秒</strong>，比传统模型快 5 倍以上。定价极具竞争力：$0.25/1M 输入 tokens，$0.75/1M 输出 tokens。已获得 Zed、Viant、Wispr Flow、Skyvern 等多家公司采用。适用场景：代码补全、实时语音交互、代理循环、RAG 管道。
+            </div>
+            <div class="news-meta">热度：HN 221 点，97 条讨论</div>
+        </div>
+    </div>
+
+    <!-- VC 观点精选 -->
+    <div class="section">
+        <div class="section-title">
+            <span class="emoji">💎</span> VC 观点精选
+        </div>
+
+        <div class="news-item">
+            <div class="news-header">
+                <span class="tag tag-vc">Sequoia</span>
+            </div>
+            <div class="news-title">长期任务代理是 2026 年的主旋律</div>
+            <div class="news-content">
+                Sequoia 强调三大技术要素构成 AGI：预训练（知识）、推理时计算（reasoning）、长期代理（迭代能力）。文章列举多个"可雇佣"AI 代理实例：OpenEvidence 的 Deep Consult（医学专家）、Harvey（法律助理）、XBOW（渗透测试）、Traversal（SRE）、Day AI（销售团队）、Juicebox（招聘）、Harmonic 的 Aristotle（数学家）、Ricursive（芯片设计师）。
+                <div class="highlight">
+                    <strong>核心观点：</strong>"The ambitious version of your roadmap just became the realistic one. Today your agents can work reliably for ~30 minutes. Soon they'll handle a day's worth of work—and eventually a century's."
+                </div>
             </div>
         </div>
 
         <div class="news-item">
-            <span class="tag tag-model">推理模型</span>
-            <div class="news-title">Qwen3-Max-Thinking - 阿里推出推理模型</div>
+            <div class="news-header">
+                <span class="tag tag-vc">a16z</span>
+            </div>
+            <div class="news-title">a16z 发布多篇前沿观点文章</div>
             <div class="news-content">
-                阿里云发布Qwen3-Max-Thinking模型，加入AI推理竞赛。该模型专注于深度思考和复杂问题求解，与OpenAI o1、DeepSeek等竞争。
+                <strong>1. AI 工厂模式在风险投资制造业的应用</strong> - 探讨"工厂即产品"模型<br>
+                <strong>2. 消费 AI 平台如何规模化变现</strong> - 广告可能是触达数十亿用户的关键<br>
+                <strong>3. AI 改变我们构建的内容和构建者</strong> - 但不改变需要构建的数量<br>
+                <strong>4. Vibe Coding 民主化软件开发</strong> - 目前主要服务技术高级用户，下一波消费 AI 产品将决定是否真正走向主流<br>
+                <strong>5. 企业 AI 战场数据分析</strong> - 最新数据显示谁在赢得企业市场
             </div>
-            <div class="news-meta">
-                🔥 467 points | 💬 408 comments | 
-                <a href="https://qwen.ai/blog?id=qwen3-max-thinking" target="_blank">阅读原文</a>
-            </div>
-        </div>
-
-        <h2>🔨 AI工具与产品</h2>
-
-        <div class="news-item">
-            <span class="tag tag-tool">功能更新</span>
-            <div class="news-title">ChatGPT Containers - 支持bash和包管理</div>
-            <div class="news-content">
-                OpenAI为ChatGPT引入容器功能，现可运行bash命令、pip/npm安装包并下载文件。这大幅增强了ChatGPT的实用性，让AI助手能够执行更复杂的编程任务。
-            </div>
-            <div class="news-meta">
-                🔥 336 points | 💬 251 comments | 
-                <a href="https://simonwillison.net/2026/Jan/26/chatgpt-containers/" target="_blank">阅读原文</a>
-            </div>
+            <div class="news-meta">a16z (Andreessen Horowitz) - Tier 1 VC 机构</div>
         </div>
 
         <div class="news-item">
-            <span class="tag tag-tool">代码迁移</span>
-            <div class="news-title">Claude Code助力10万行代码从TypeScript迁移到Rust</div>
-            <div class="news-content">
-                Facebook工程师Christopher Chedeau分享使用Claude Code在一个月内将10万行TypeScript代码迁移到Rust的经验。展示了AI辅助大规模代码重构的可能性。
+            <div class="news-header">
+                <span class="tag tag-vc">Sequoia</span>
             </div>
-            <div class="news-meta">
-                🔥 213 points | 💬 130 comments | 
-                <a href="https://blog.vjeux.com/2026/analysis/porting-100k-lines-from-typescript-to-rust-using-claude-code-in-a-month.html" target="_blank">阅读原文</a>
+            <div class="news-title">其他 Sequoia 最新内容</div>
+            <div class="news-content">
+                • <strong>从初创创始人到规模化 CEO</strong> - Brian Halligan 分享成长路径<br>
+                • <strong>Arc PMF 框架</strong> - 产品市场契合度评估工具<br>
+                • <strong>$10 万亿 AI 革命</strong> - Konstantine Buhler 视频解读<br>
+                • <strong>在零售业构建下一个亚马逊的 $1T 机会</strong> - AI 驱动的零售变革<br>
+                • <strong>Sequoia 开源奖学金</strong> - 申请现已开放
             </div>
         </div>
+    </div>
 
-        <h2>📊 行业观察与讨论</h2>
-
-        <div class="news-item">
-            <span class="tag tag-discussion">行业趋势</span>
-            <div class="news-title">AI代码审查泡沫警告</div>
-            <div class="news-content">
-                Greptile团队撰文指出AI代码审查工具市场存在泡沫现象。尽管有大量创业公司涌入该领域，但实际价值和差异化仍待验证。
-            </div>
-            <div class="news-meta">
-                🔥 269 points | 💬 185 comments | 
-                <a href="https://www.greptile.com/blog/ai-code-review-bubble" target="_blank">阅读原文</a>
-            </div>
+    <!-- AI 技术突破 -->
+    <div class="section">
+        <div class="section-title">
+            <span class="emoji">🚀</span> AI 技术突破
         </div>
 
         <div class="news-item">
-            <span class="tag tag-discussion">观点文章</span>
-            <div class="news-title">技术的青春期 - Dario Amodei长文</div>
+            <div class="news-header">
+                <span class="tag tag-ai">语音识别</span>
+            </div>
+            <div class="news-title">
+                <a href="https://github.com/moonshine-ai/moonshine" target="_blank">
+                    Moonshine 开源 STT 模型 - 准确率超越 Whisper Large v3
+                </a>
+                <span class="trending-badge">🔥 243点</span>
+            </div>
             <div class="news-content">
-                Anthropic CEO Dario Amodei发表长篇文章《技术的青春期》，探讨AI技术发展阶段及其对社会的影响。文章引发广泛讨论。
+                Pete Warden 发布 Moonshine 开源语音转文字模型，在实时流式场景中表现优异。<strong>Medium Streaming 模型：WER 6.65%，仅 245M 参数，在 MacBook Pro 上延迟 107ms</strong>；对比 Whisper Large v3：WER 7.44%，1.5B 参数，延迟 11,286ms。支持多平台（Python、iOS、Android、Raspberry Pi）和多语言（英语、西班牙语、中文、日语、韩语、越南语、乌克兰语、阿拉伯语）。专为实时语音界面优化，支持缓存和灵活输入窗口。
             </div>
-            <div class="news-meta">
-                🔥 192 points | 💬 131 comments | 
-                <a href="https://www.darioamodei.com/essay/the-adolescence-of-technology" target="_blank">阅读原文</a>
-            </div>
+            <div class="news-meta">热度：HN 243 点，52 条讨论 | GitHub Trending</div>
         </div>
 
         <div class="news-item">
-            <span class="tag tag-discussion">软件工艺</span>
-            <div class="news-title">AI代码与软件工艺的思考</div>
+            <div class="news-header">
+                <span class="tag tag-ai">开源项目</span>
+            </div>
+            <div class="news-title">
+                <a href="https://github.com/huggingface/skills" target="_blank">
+                    Hugging Face Skills - AI 代理技能框架
+                </a>
+                <span class="trending-badge">🔥 169点</span>
+            </div>
             <div class="news-content">
-                Alex Wennerberg发表文章讨论AI生成代码对软件工艺的影响，引发关于代码质量、工程实践和开发者技能的深度探讨。
+                Hugging Face 发布 Skills 框架，为 AI 代理提供结构化的技能管理系统。支持多代理架构、上下文工程和生产级代理系统。GitHub Trending 上同时出现多个相关项目：muratcankoylan 的 Agent-Skills-for-Context-Engineering（上下文工程代理技能集合）、obra 的 superpowers（代理技能框架和软件开发方法论）。
             </div>
-            <div class="news-meta">
-                🔥 179 points | 💬 96 comments | 
-                <a href="https://alexwennerberg.com/blog/2026-01-25-slop.html" target="_blank">阅读原文</a>
-            </div>
+            <div class="news-meta">热度：HN 169 点，46 条讨论 | GitHub Trending</div>
         </div>
 
         <div class="news-item">
-            <span class="tag tag-discussion">产品趋势</span>
-            <div class="news-title">Low-Code已死 (2014-2025)</div>
+            <div class="news-header">
+                <span class="tag tag-ai">开发工具</span>
+            </div>
+            <div class="news-title">
+                <a href="https://pi.dev" target="_blank">Pi – 极简终端编程工具</a> | 
+                <a href="https://github.com/generalaction/emdash" target="_blank">Emdash – 开源代理开发环境</a>
+            </div>
             <div class="news-content">
-                Zack Liscio撰文宣告低代码时代的终结。随着AI编程助手的兴起，传统的可视化低代码平台正在被更灵活的AI辅助编程所取代。
+                • <strong>Pi</strong>（372 点，165 讨论）：极简终端编程框架，专注于简洁高效的开发体验<br>
+                • <strong>Emdash</strong>（156 点，59 讨论）：开源代理式开发环境，支持 AI 辅助的代码生成和开发流程
             </div>
-            <div class="news-meta">
-                🔥 230 points | 💬 114 comments | 
-                <a href="https://www.zackliscio.com/posts/rip-low-code-2014-2025/" target="_blank">阅读原文</a>
-            </div>
-        </div>
-
-        <h2>💻 GitHub热门项目</h2>
-
-        <div class="news-item">
-            <span class="tag tag-github">开源项目</span>
-            <div class="news-title">PageIndex - 无向量RAG文档索引</div>
-            <div class="news-content">
-                VectifyAI发布PageIndex项目，为基于推理的RAG提供文档索引方案。该方法不依赖传统向量数据库，通过推理方式进行检索。
-            </div>
-            <div class="news-meta">
-                ⭐ 9,999 stars | 🍴 732 forks | Python | 
-                <a href="https://github.com/VectifyAI/PageIndex" target="_blank">查看项目</a>
-            </div>
+            <div class="news-meta">Hacker News 热门项目</div>
         </div>
 
         <div class="news-item">
-            <span class="tag tag-github">AI Agent</span>
-            <div class="news-title">Goose - 可扩展AI代码助手</div>
+            <div class="news-header">
+                <span class="tag tag-ai">GitHub Trending</span>
+            </div>
+            <div class="news-title">其他 GitHub Trending AI 项目</div>
             <div class="news-content">
-                Block发布开源AI代理Goose，超越简单代码建议，支持安装、执行、编辑和测试，兼容任何LLM。为开发者提供强大的AI协作工具。
+                • <strong>OpenBB</strong> - 面向分析师、量化研究员和 AI 代理的金融数据平台<br>
+                • <strong>RuVector</strong> - 用 Rust 构建的高性能实时自学习向量图神经网络数据库（914 stars）<br>
+                • <strong>PersonaLive</strong> - [CVPR 2026] 用于直播的表现力肖像图像动画（2,195 stars）<br>
+                • <strong>PageIndex</strong> - 基于推理的无向量 RAG 文档索引<br>
+                • <strong>system-prompts-and-models</strong> - 收集了 Cursor、Claude Code、Devin AI、Windsurf 等 AI 工具的系统提示词和模型信息
             </div>
-            <div class="news-meta">
-                trending | TypeScript | 
-                <a href="https://github.com/block/goose" target="_blank">查看项目</a>
-            </div>
+        </div>
+    </div>
+
+    <!-- 企业新闻 -->
+    <div class="section">
+        <div class="section-title">
+            <span class="emoji">🏢</span> 企业新闻
         </div>
 
         <div class="news-item">
-            <span class="tag tag-github">开源工具</span>
-            <div class="news-title">mlx-audio - Apple Silicon上的语音处理</div>
+            <div class="news-header">
+                <span class="tag tag-product">硬件制造</span>
+            </div>
+            <div class="news-title">
+                <a href="https://www.apple.com/newsroom/2026/02/apple-accelerates-us-manufacturing-with-mac-mini-production/" target="_blank">
+                    Apple 在德州休斯顿新工厂生产 Mac mini
+                </a>
+                <span class="trending-badge">🔥 512点</span>
+            </div>
             <div class="news-content">
-                基于Apple MLX框架构建的TTS、STT和语音转换库，为Apple Silicon提供高效的语音分析能力。
+                苹果宣布在德州休斯顿建立新制造工厂，将生产 Mac mini。这是苹果加速美国本土制造战略的重要一步，符合当前供应链本地化和制造业回流的趋势。
             </div>
-            <div class="news-meta">
-                trending | Python | 
-                <a href="https://github.com/Blaizzy/mlx-audio" target="_blank">查看项目</a>
-            </div>
+            <div class="news-meta">热度：HN 512 点，500 条讨论</div>
         </div>
 
         <div class="news-item">
-            <span class="tag tag-github">记忆引擎</span>
-            <div class="news-title">SuperMemory - AI时代的记忆API</div>
+            <div class="news-header">
+                <span class="tag tag-product">电商</span>
+            </div>
+            <div class="news-title">
+                <a href="https://www.thebignewsletter.com/p/amazon-busted-for-widespread-price" target="_blank">
+                    亚马逊被指控大规模操纵价格抬升经济成本
+                </a>
+                <span class="trending-badge">🔥 425点</span>
+            </div>
             <div class="news-content">
-                极速、可扩展的记忆引擎和应用，为AI时代设计的Memory API，帮助AI系统管理和检索长期记忆。
+                The Big Newsletter 报道亚马逊涉嫌通过系统性方案在整个经济中抬高价格。这一指控可能引发反垄断审查，对电商行业和消费者价格产生深远影响。
             </div>
-            <div class="news-meta">
-                trending | TypeScript | 
-                <a href="https://github.com/supermemoryai/supermemory" target="_blank">查看项目</a>
-            </div>
+            <div class="news-meta">热度：HN 425 点，143 条讨论</div>
+        </div>
+    </div>
+
+    <!-- 行业分析 -->
+    <div class="section">
+        <div class="section-title">
+            <span class="emoji">📊</span> 行业分析 & 热议话题
         </div>
 
         <div class="news-item">
-            <span class="tag tag-github">金融AI</span>
-            <div class="news-title">FinRobot - 金融分析AI代理平台</div>
+            <div class="news-header">
+                <span class="tag tag-report">行业观察</span>
+            </div>
+            <div class="news-title">
+                <a href="https://blog.codemine.be/posts/2026/20260222-be-quiet/" target="_blank">
+                    LLM=True - 关于 AI 的沉默与思考
+                </a>
+            </div>
             <div class="news-content">
-                AI4Finance基金会发布开源金融AI代理平台FinRobot，使用LLMs进行金融数据分析，为金融领域提供专业AI工具。
+                深度思考文章，探讨 AI 时代的信息过载和保持理性思考的重要性。在 AI 工具无处不在的今天，何时应该使用 LLM，何时应该独立思考？
             </div>
-            <div class="news-meta">
-                trending | Python | 
-                <a href="https://github.com/AI4Finance-Foundation/FinRobot" target="_blank">查看项目</a>
-            </div>
-        </div>
-
-        <h2>🎯 其他值得关注</h2>
-
-        <div class="news-item">
-            <span class="tag tag-discussion">基准测试</span>
-            <div class="news-title">TetrisBench - Gemini Flash在俄罗斯方块中达66%胜率</div>
-            <div class="news-content">
-                Show HN项目展示Gemini Flash在俄罗斯方块游戏中对抗Opus达到66%胜率。为AI游戏能力提供新的基准测试方法。
-            </div>
-            <div class="news-meta">
-                🔥 101 points | 💬 37 comments | 
-                <a href="https://tetrisbench.com/tetrisbench/" target="_blank">查看项目</a>
-            </div>
+            <div class="news-meta">热度：HN 32 点，31 条讨论</div>
         </div>
 
         <div class="news-item">
-            <span class="tag tag-product">产品理念</span>
-            <div class="news-title">Model Market Fit - 新的产品思维</div>
+            <div class="news-header">
+                <span class="tag tag-report">创意项目</span>
+            </div>
+            <div class="news-title">
+                <a href="https://www.calebleak.com/posts/dog-game/" target="_blank">
+                    我在帮助我的狗进行"氛围编程"游戏
+                </a>
+                <span class="trending-badge">🔥 915点</span>
+            </div>
             <div class="news-content">
-                Nicolas Bustamante提出"模型市场契合度"概念，类比PMF，探讨如何为AI产品找到合适的模型和应用场景。
+                有趣的创意项目，展示了 AI 辅助开发在非传统场景中的应用。作者使用 AI 工具为自己的狗开发游戏，体现了"氛围编程"（vibe coding）的理念——即使不是专业开发者也能通过 AI 创造软件。
             </div>
-            <div class="news-meta">
-                🔥 57 points | 💬 11 comments | 
-                <a href="https://www.nicolasbustamante.com/p/model-market-fit" target="_blank">阅读原文</a>
-            </div>
+            <div class="news-meta">热度：HN 915 点，279 条讨论</div>
         </div>
 
-        <div class="footer">
-            <p>📅 2026年02月25日 | 由OpenClaw自动收集整理</p>
-            <p>数据来源: Hacker News, GitHub Trending</p>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="tag tag-report">技术研究</span>
+            </div>
+            <div class="news-title">
+                <a href="https://arxiv.org/abs/2602.20762" target="_blank">
+                    GNU find 的图灵完备性证明
+                </a>
+            </div>
+            <div class="news-content">
+                arXiv 最新论文证明了 GNU find 命令是图灵完备的，展示了看似简单的 Unix 工具实际上具有通用计算能力。这类研究揭示了计算机科学基础理论在实际工具中的体现。
+            </div>
+            <div class="news-meta">热度：HN 44 点，5 条讨论</div>
         </div>
+
+        <div class="news-item">
+            <div class="news-header">
+                <span class="tag tag-report">其他热议</span>
+            </div>
+            <div class="news-title">其他值得关注的话题</div>
+            <div class="news-content">
+                • <strong>Nearby Glasses</strong>（327 点）- 智能眼镜项目<br>
+                • <strong>Kindle 改造显示公交到站时间</strong>（261 点）- 创意硬件 hack 项目<br>
+                • <strong>系统提示词中的主权</strong>（55 点）- 探讨 AI 系统提示词的控制权问题<br>
+                • <strong>Cape.co 手机服务</strong>（95 点）- 面向注重隐私用户的手机服务
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>📧 本邮件由 OpenClaw AI 自动生成 | 数据来源：Hacker News, GitHub Trending, TechCrunch, Sequoia, a16z</p>
+        <p>🌐 同步发布到 GitHub Pages</p>
+        <p style="color: #aaa; margin-top: 10px;">生成时间：2026-02-25 10:00 UTC</p>
     </div>
 </body>
 </html>
