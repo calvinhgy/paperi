@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .header .date {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+        }
+        .section-title .emoji {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .news-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        .tag-ai { background: #e3f2fd; color: #1976d2; }
+        .tag-vc { background: #fff3e0; color: #f57c00; }
+        .tag-funding { background: #e8f5e9; color: #388e3c; }
+        .news-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 8px 0;
+        }
+        .news-title a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .news-title a:hover {
+            color: #667eea;
+        }
+        .news-content {
+            color: #555;
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+        .news-meta {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+        }
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 13px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📰 AI早报</h1>
+        <div class="date">2026年03月01日 | AI/VC/Startup 重点新闻</div>
+    </div>
+    
+    
+    <div class="section">
+        <div class="section-title">
+            <span class="emoji">🔥</span>
+            <span>头条速览</span>
+        </div>
+    
+        <div class="news-item">
+            <span class="tag tag-ai">AI</span>
+            <div class="news-title">
+                <a href="https://openai.com/index/our-agreement-with-the-department-of-war" target="_blank">OpenAI 与美国国防部达成协议，在机密网络部署模型</a>
+            </div>
+            <div class="news-content">OpenAI 宣布与美国国防部合作，将其 AI 模型部署到机密网络环境中，引发业界对 AI 军事应用的广泛讨论。</div>
+            <div class="news-meta">👍 1299 分 | 💬 610 评论</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">AI</span>
+            <div class="news-title">
+                <a href="https://www.wired.com/story/openai-fires-employee-insider-trading-polymarket-kalshi/" target="_blank">OpenAI 解雇员工：涉嫌预测市场内幕交易</a>
+            </div>
+            <div class="news-content">OpenAI 因员工涉嫌在 Polymarket 和 Kalshi 等预测市场进行内幕交易而将其解雇，凸显 AI 公司在治理和合规方面面临的挑战。</div>
+            <div class="news-meta">👍 239 分 | 💬 131 评论</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">AI</span>
+            <div class="news-title">
+                <a href="https://garymarcus.substack.com/p/the-whole-thing-was-scam" target="_blank">Gary Marcus：整个事情就是一场骗局</a>
+            </div>
+            <div class="news-content">AI 批评者 Gary Marcus 发文质疑当前 AI 热潮的真实性，引发关于 AI 能力与炒作之间差距的激烈辩论。</div>
+            <div class="news-meta">👍 390 分 | 💬 110 评论</div>
+        </div>
+        </div>
+
+
+    <div class="section">
+        <div class="section-title">
+            <span class="emoji">💡</span>
+            <span>VC 观点</span>
+        </div>
+    
+        <div class="news-item">
+            <span class="tag tag-vc">观点</span>
+            <div class="news-title">
+                <a href="https://garymarcus.substack.com/p/the-whole-thing-was-scam" target="_blank">Gary Marcus：整个事情就是一场骗局</a>
+            </div>
+            <div class="news-content">AI 批评者 Gary Marcus 发文质疑当前 AI 热潮的真实性，引发关于 AI 能力与炒作之间差距的激烈辩论。</div>
+            <div class="news-meta">👍 390 分 | 💬 110 评论</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-vc">观点</span>
+            <div class="news-title">
+                <a href="https://carlkolon.com/2026/02/27/engineering-747-coding-agents/" target="_blank">747s 和编码代理：工程思维的演变</a>
+            </div>
+            <div class="news-content">工程师分享从设计 747 飞机到开发 AI 编码代理的经验，探讨复杂系统工程的共通之处。</div>
+            <div class="news-meta">👍 99 分 | 💬 41 评论</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-vc">观点</span>
+            <div class="news-title">
+                <a href="https://www.ivanturkovic.com/2026/01/22/history-software-simplification-cobol-ai-hype/" target="_blank">永恒的承诺：消除程序员的历史</a>
+            </div>
+            <div class="news-content">回顾从 COBOL 到 AI 的软件简化史，探讨"消除程序员"这一反复出现但从未实现的技术承诺。</div>
+            <div class="news-meta">👍 203 分 | 💬 145 评论</div>
+        </div>
+        </div>
+
+
+    <div class="section">
+        <div class="section-title">
+            <span class="emoji">🤖</span>
+            <span>AI 技术</span>
+        </div>
+    
+        <div class="news-item">
+            <span class="tag tag-ai">技术</span>
+            <div class="news-title">
+                <a href="https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance" target="_blank">Qwen3.5 122B 和 35B 模型：本地达到 Sonnet 4.5 性能</a>
+            </div>
+            <div class="news-content">阿里巴巴发布 Qwen3.5 中型开源模型，声称在本地计算机上可达到 Claude Sonnet 4.5 的性能水平。</div>
+            <div class="news-meta">👍 38 分 | 💬 8 评论</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">技术</span>
+            <div class="news-title">
+                <a href="https://mksg.lu/blog/context-mode" target="_blank">停止烧光你的上下文窗口：我们如何在 Claude Code 中削减 98% 的 MCP 输出</a>
+            </div>
+            <div class="news-content">开发者分享如何通过优化 Model Context Protocol (MCP) 输出，将 Claude Code 的上下文消耗降低 98%，显著提升效率。</div>
+            <div class="news-meta">👍 159 分 | 💬 43 评论</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">技术</span>
+            <div class="news-title">
+                <a href="https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs" target="_blank">Unsloth Dynamic 2.0 GGUFs：更快的本地 LLM 推理</a>
+            </div>
+            <div class="news-content">Unsloth 发布 Dynamic 2.0 GGUF 格式，为本地 LLM 推理提供更高性能和更小的模型体积。</div>
+            <div class="news-meta">👍 183 分 | 💬 50 评论</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">技术</span>
+            <div class="news-title">
+                <a href="https://nowigetit.us" target="_blank">Show HN: Now I Get It – 将科学论文转换为交互式网页</a>
+            </div>
+            <div class="news-content">一个新工具可以将复杂的科学论文转换为交互式网页，使研究内容更易于理解和探索。</div>
+            <div class="news-meta">👍 150 分 | 💬 91 评论</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">技术</span>
+            <div class="news-title">
+                <a href="https://github.com/google-gemini/gemini-cli/discussions/20632" target="_blank">Google Gemini 反引力封禁事件及账户恢复说明</a>
+            </div>
+            <div class="news-content">Google 就 Gemini "Antigravity" 功能导致的大规模账户封禁发布说明，并提供恢复访问的步骤。</div>
+            <div class="news-meta">👍 169 分 | 💬 140 评论</div>
+        </div>
+        </div>
+
+
+    <div class="section">
+        <div class="section-title">
+            <span class="emoji">⭐</span>
+            <span>GitHub Trending</span>
+        </div>
+    
+        <div class="news-item">
+            <span class="tag tag-ai">GitHub</span>
+            <div class="news-title">
+                <a href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a>
+            </div>
+            <div class="news-content">An agentic skills framework & software development methodology that works.</div>
+            <div class="news-meta">⭐ 65,874 stars (1,314 today) | 📝 Shell</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">GitHub</span>
+            <div class="news-title">
+                <a href="https://github.com/moeru-ai/airi" target="_blank">moeru-ai/airi</a>
+            </div>
+            <div class="news-content">💖🧸 自托管的 Grok 伴侣，支持实时语音聊天、Minecraft、Factorio 游戏。Web/macOS/Windows 支持。</div>
+            <div class="news-meta">⭐ 19,291 stars (1,088 today) | 📝 TypeScript</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">GitHub</span>
+            <div class="news-title">
+                <a href="https://github.com/ruvnet/ruflo" target="_blank">ruvnet/ruflo</a>
+            </div>
+            <div class="news-content">🌊 领先的 Claude 代理编排平台。部署智能多代理群、协调自主工作流、构建对话式 AI 系统。</div>
+            <div class="news-meta">⭐ 16,483 stars (938 today) | 📝 TypeScript</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">GitHub</span>
+            <div class="news-title">
+                <a href="https://github.com/anthropics/claude-code" target="_blank">anthropics/claude-code</a>
+            </div>
+            <div class="news-content">Claude Code 是一个终端代理编码工具，理解你的代码库，通过自然语言命令帮助你更快编码。</div>
+            <div class="news-meta">⭐ N/A stars (N/A today) | 📝 N/A</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">GitHub</span>
+            <div class="news-title">
+                <a href="https://github.com/alibaba/OpenSandbox" target="_blank">alibaba/OpenSandbox</a>
+            </div>
+            <div class="news-content">OpenSandbox 是一个通用 AI 应用沙箱平台，提供多语言 SDK、统一沙箱 API 和 Docker/K8s 运行时。</div>
+            <div class="news-meta">⭐ 1,890 stars (350 today) | 📝 Python</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">GitHub</span>
+            <div class="news-title">
+                <a href="https://github.com/bytedance/deer-flow" target="_blank">bytedance/deer-flow</a>
+            </div>
+            <div class="news-content">开源 SuperAgent 框架，可研究、编码和创建。通过沙箱、记忆、工具、技能和子代理处理不同级别的任务。</div>
+            <div class="news-meta">⭐ N/A stars (N/A today) | 📝 N/A</div>
+        </div>
+        </div>
+
+
+    <div class="section">
+        <div class="section-title">
+            <span class="emoji">💰</span>
+            <span>融资与企业</span>
+        </div>
+    
+        <div class="news-item">
+            <span class="tag tag-funding">企业</span>
+            <div class="news-title">
+                <a href="https://openai.com/index/our-agreement-with-the-department-of-war" target="_blank">OpenAI 与美国国防部达成协议，在机密网络部署模型</a>
+            </div>
+            <div class="news-content">OpenAI 宣布与美国国防部合作，将其 AI 模型部署到机密网络环境中，引发业界对 AI 军事应用的广泛讨论。</div>
+            <div class="news-meta">👍 1299 分 | 💬 610 评论</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-funding">企业</span>
+            <div class="news-title">
+                <a href="https://www.wired.com/story/openai-fires-employee-insider-trading-polymarket-kalshi/" target="_blank">OpenAI 解雇员工：涉嫌预测市场内幕交易</a>
+            </div>
+            <div class="news-content">OpenAI 因员工涉嫌在 Polymarket 和 Kalshi 等预测市场进行内幕交易而将其解雇，凸显 AI 公司在治理和合规方面面临的挑战。</div>
+            <div class="news-meta">👍 239 分 | 💬 131 评论</div>
+        </div>
+        </div>
+
+
+    <div class="section">
+        <div class="section-title">
+            <span class="emoji">💬</span>
+            <span>热议话题</span>
+        </div>
+    
+        <div class="news-item">
+            <span class="tag tag-ai">讨论</span>
+            <div class="news-title">
+                <a href="https://openai.com/index/our-agreement-with-the-department-of-war" target="_blank">OpenAI 与美国国防部达成协议，在机密网络部署模型</a>
+            </div>
+            <div class="news-content">OpenAI 宣布与美国国防部合作，将其 AI 模型部署到机密网络环境中，引发业界对 AI 军事应用的广泛讨论。</div>
+            <div class="news-meta">👍 1299 分 | 💬 610 评论</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">讨论</span>
+            <div class="news-title">
+                <a href="https://www.ivanturkovic.com/2026/01/22/history-software-simplification-cobol-ai-hype/" target="_blank">永恒的承诺：消除程序员的历史</a>
+            </div>
+            <div class="news-content">回顾从 COBOL 到 AI 的软件简化史，探讨"消除程序员"这一反复出现但从未实现的技术承诺。</div>
+            <div class="news-meta">👍 203 分 | 💬 145 评论</div>
+        </div>
+        
+        <div class="news-item">
+            <span class="tag tag-ai">讨论</span>
+            <div class="news-title">
+                <a href="https://github.com/google-gemini/gemini-cli/discussions/20632" target="_blank">Google Gemini 反引力封禁事件及账户恢复说明</a>
+            </div>
+            <div class="news-content">Google 就 Gemini "Antigravity" 功能导致的大规模账户封禁发布说明，并提供恢复访问的步骤。</div>
+            <div class="news-meta">👍 169 分 | 💬 140 评论</div>
+        </div>
+        </div>
+
+
+
+<div class="section">
+  <div class="section-title">
+    <span class="emoji">📰</span>
+    <span>科技博客精选（来自 92 个顶级源）</span>
+  </div>
+  <h3>💻 Tech</h3>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.abortretry.fail/p/the-most-important-micros">The Most Important Micros</a>
+    </div>
+    <div class="news-content">
+      That is, for what they represent...
+    </div>
+    <div class="news-meta">
+      来源: abortretry.fail | 3 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.johndcook.com/blog/2026/02/28/file-extensions-bash/">Working with file extensions in bash scripts</a>
+    </div>
+    <div class="news-content">
+      I&#8217;ve never been good at shell scripting. I&#8217;d much rather write scripts in a general purpose language like Python. But occasionally a shell script can do something so simply that it&#8217;s...
+    </div>
+    <div class="news-meta">
+      来源: johndcook.com | 3 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://garymarcus.substack.com/p/the-whole-thing-was-scam">The whole thing was a scam</a>
+    </div>
+    <div class="news-content">
+      The fix was in, and Dario never had a chance....
+    </div>
+    <div class="news-meta">
+      来源: garymarcus.substack.com | 5 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.theatlantic.com/ideas/2026/02/trumps-iran-regime-change-attack-gamble/686190/?gift=aQyUJR7AIw1mJWdQ6Ed6yOWB4bfod1kQqCyz2RXbHaY">Trump’s Enormous Gamble on Regime Change in Iran</a>
+    </div>
+    <div class="news-meta">
+      来源: daringfireball.net | 5 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://worksonmymachine.ai/p/open-source-saas-and-the-silence">Open Source, SaaS, and the Silence After Unlimited Code Generation</a>
+    </div>
+    <div class="news-content">
+      The End of Feedback...
+    </div>
+    <div class="news-meta">
+      来源: worksonmymachine.substack.com | 7 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.construction-physics.com/p/reading-list-022826">Reading List 02/28/26</a>
+    </div>
+    <div class="news-content">
+      LA permitting costs, trickle-down housing, Panasonic stops making TVs, robotaxi remote operators, geothermal progress....
+    </div>
+    <div class="news-meta">
+      来源: construction-physics.com | 8 小时前
+    </div>
+  </div>
+  <h3>🤖 AI/ML</h3>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://idiallo.com/byte-size/im-cancelling-my-chatgpt-openai-account?src=feed">That's it, I'm cancelling my ChatGPT</a>
+    </div>
+    <div class="news-content">
+      Just like everyone, I read Sam Altman's tweet about joining the so-called Department of War, to use ChatGPT on DoW classified networks. As others have pointed out, this is the entry point for mass sur...
+    </div>
+    <div class="news-meta">
+      来源: idiallo.com | 4 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://blog.miguelgrinberg.com/post/llm-use-in-the-python-source-code">LLM Use in the Python Source Code</a>
+    </div>
+    <div class="news-content">
+      There is a trick that is spreading through social media. If you block the claude user on GitHub, then each time you visit a GitHub repository that has commits by this user you get a banner at the top ...
+    </div>
+    <div class="news-meta">
+      来源: miguelgrinberg.com | 6 小时前
+    </div>
+  </div>
+</div>
+
+    
+    <div class="footer">
+        <p>📅 2026年03月01日 | 由 OpenClaw 自动收集整理</p>
+        <p>数据来源: Hacker News, GitHub Trending, Top 20 VC机构</p>
+    </div>
+</body>
+</html>
