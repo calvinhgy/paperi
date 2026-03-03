@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .header .date {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+        }
+        .section-title .emoji {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .news-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        .tag-ai { background: #e3f2fd; color: #1976d2; }
+        .tag-vc { background: #fff3e0; color: #f57c00; }
+        .tag-funding { background: #e8f5e9; color: #388e3c; }
+        .news-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 8px 0;
+        }
+        .news-title a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .news-title a:hover {
+            color: #667eea;
+        }
+        .news-content {
+            color: #555;
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+        .news-meta {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+        }
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 13px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📰 AI晚报</h1>
+        <div class="date">2026年03月03日 | AI/VC/Startup 重点新闻</div>
+    </div>
+    
+    <div class="source-section"><h3>🔥 Hacker News 热门</h3><ul><li><a href="https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything">Meta’s AI smart glasses and data privacy concerns</a> <span class="meta">(1082 points, 614 comments)</span></li><li><a href="https://chipsandcheese.com/p/arms-cortex-x925-reaching-desktop">Arm's Cortex X925: Reaching Desktop Performance</a> <span class="meta">(70 points, 13 comments)</span></li><li><a href="https://futurism.com/artificial-intelligence/ars-technica-fires-reporter-ai-quotes">Ars Technica fires reporter after AI controversy involving fabricated quotes</a> <span class="meta">(286 points, 168 comments)</span></li><li><a href="https://physics.aps.org/articles/v19/24">Physicists developing a quantum computer that’s entirely open source</a> <span class="meta">(112 points, 22 comments)</span></li><li><a href="https://andrewvanner.github.io/som/SoM_CC_Process_Day.pdf">Seed of Might Color Correction Process (2023) [pdf]</a> <span class="meta">(89 points, 23 comments)</span></li><li><a href="https://status.claude.com/incidents/yf48hzysrvl5">Elevated Errors in Claude.ai</a> <span class="meta">(141 points, 114 comments)</span></li></ul></div>
+
+<div class="section">
+  <div class="section-title">
+    <span class="emoji">📰</span>
+    <span>科技博客精选（来自 92 个顶级源）</span>
+  </div>
+  <h3>🤖 AI/ML</h3>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://feed.tedium.co/link/15204/17288375/betting-against-substack">Betting Against Substack</a>
+    </div>
+    <div class="news-content">
+      I once turned down Substack because of their design limitations. As they emerge yet again in the news cycle, I thought I’d make my point with some of that design stuff they don’t do....
+    </div>
+    <div class="news-meta">
+      来源: tedium.co | 5 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.johndcook.com/blog/2026/03/02/an-ai-odyssey-part-1-correctness-conundrum/">An AI Odyssey, Part 1: Correctness Conundrum</a>
+    </div>
+    <div class="news-content">
+      I recently talked with a contact who repeated what he&#8217;d heard regarding agentic AI systems&#8212;namely, that they can greatly increase productivity in professional financial management tasks. H...
+    </div>
+    <div class="news-meta">
+      来源: johndcook.com | 7 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://workos.com/docs/authkit/cli-installer?utm_source=tldrdev&amp;utm_medium=newsletter&amp;utm_campaign=q12026">[Sponsor] npx workos: An AI Agent That Writes Auth Directly Into Your Codebase</a>
+    </div>
+    <div class="news-meta">
+      来源: daringfireball.net | 9 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://seangoedecke.com/giving-llms-a-personality/">Giving LLMs a personality is just good engineering</a>
+    </div>
+    <div class="news-meta">
+      来源: seangoedecke.com | 10 小时前
+    </div>
+  </div>
+  <h3>💻 Tech</h3>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://daringfireball.net/2026/03/hazeover">★ HazeOver — Mac Utility for Highlighting the Frontmost Window</a>
+    </div>
+    <div class="news-content">
+      What HazeOver does is highlight the active window by dimming all background windows. That’s it. But it does this simple task with aplomb, and it makes a significant difference in the day-to-day usabil...
+    </div>
+    <div class="news-meta">
+      来源: daringfireball.net | 10 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://garymarcus.substack.com/p/how-agi-is-nigh-doomers-own-goaled">How AGI-is-nigh doomers own-goaled humanity</a>
+    </div>
+    <div class="news-content">
+      The road to where we are now was (mostly) paved with good intentions &#8212; but mixed with too much uncritical acceptance of hype....
+    </div>
+    <div class="news-meta">
+      来源: garymarcus.substack.com | 10 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://unsung.aresluna.org/unsung-heroes-flickrs-urls-scheme/">Unsung Heroes: Flickr’s URLs Scheme</a>
+    </div>
+    <div class="news-meta">
+      来源: daringfireball.net | 11 小时前
+    </div>
+  </div>
+</div>
+
+    
+    <div class="footer">
+        <p>📅 2026年03月03日 | 由 OpenClaw 自动收集整理</p>
+        <p>数据来源: Hacker News, GitHub Trending, Top 20 VC机构</p>
+    </div>
+</body>
+</html>
