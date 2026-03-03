@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .header .date {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+        }
+        .section-title .emoji {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .news-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        .tag-ai { background: #e3f2fd; color: #1976d2; }
+        .tag-vc { background: #fff3e0; color: #f57c00; }
+        .tag-funding { background: #e8f5e9; color: #388e3c; }
+        .news-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 8px 0;
+        }
+        .news-title a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .news-title a:hover {
+            color: #667eea;
+        }
+        .news-content {
+            color: #555;
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+        .news-meta {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+        }
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 13px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📰 AI早报</h1>
+        <div class="date">2026年03月04日 | AI/VC/Startup 重点新闻</div>
+    </div>
+    
+    <div class="news-section">
+<h2>🤖 AI 前沿动态</h2>
+
+<div class="news-item">
+<h3><a href="https://openai.com/index/gpt-5-3-instant/">GPT-5.3 Instant 发布</a></h3>
+<p>OpenAI 发布 GPT-5.3 Instant 版本，专注于低延迟响应场景。该版本在保持高质量输出的同时，大幅提升了推理速度，适用于实时对话和交互式应用。</p>
+<span class="source">HN 199↑</span>
+</div>
+
+<div class="news-item">
+<h3><a href="https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf">Claude's Cycles：Donald Knuth 论文</a></h3>
+<p>计算机科学家 Donald Knuth 发表关于 Claude AI 推理循环的研究论文，深入分析大语言模型的思维模式和循环推理机制。论文探讨了 AI 系统中的递归思考模式。</p>
+<span class="source">HN 358↑</span>
+</div>
+
+<div class="news-item">
+<h3><a href="https://github.com/arjunkmrm/recall">Recall：AI 编程助手的对话记忆技能</a></h3>
+<p>开源项目 Recall 为 Claude Code 和 Codex 提供对话记忆能力，让 AI 助手能够回忆过去的交互内容，提升长期协作体验。⭐48</p>
+<span class="source">GitHub Trending</span>
+</div>
+
+<div class="news-item">
+<h3><a href="https://github.com/FireRedTeam/FireRedVAD">FireRedVAD：工业级语音活动检测</a></h3>
+<p>FireRedVAD 是新一代语音活动检测系统，支持100+语言，性能超越 Silero-VAD、TEN-VAD 等主流方案。适用于实时语音处理和音频事件检测场景。⭐47</p>
+<span class="source">GitHub Trending</span>
+</div>
+</div>
+
+<div class="news-section">
+<h2>💼 创业与投资</h2>
+
+<div class="news-item">
+<h3><a href="https://github.com/binance/binance-skills-hub">币安技能中心：AI Agent 原生加密访问</a></h3>
+<p>币安推出开放技能市场 Binance Skills Hub，为 AI Agent 提供原生加密货币操作能力。这标志着 AI 与 Web3 融合的新里程碑，AI 助手将能直接参与链上交易。⭐51</p>
+<span class="source">GitHub Trending</span>
+</div>
+
+<div class="news-item">
+<h3><a href="https://github.com/heri1845/Polymarket-trading-tool">Polymarket 交易工具开源</a></h3>
+<p>预测市场交易机器人 Polymarket Trading Tool 开源，支持自动化交易和跟单功能。项目短时间内获得126星，反映市场对链上预测市场的高度关注。⭐126</p>
+<span class="source">GitHub Trending</span>
+</div>
+
+<div class="news-item">
+<h3><a href="https://cuencahighlife.com/why-payment-fees-matter-more-than-you-think/">支付费用的隐性影响</a></h3>
+<p>深度分析支付手续费对商业模式的长期影响。文章指出，看似微小的交易费用累积起来可能显著侵蚀利润率，初创企业在设计商业模式时应重点考虑支付成本结构。</p>
+<span class="source">HN 74↑</span>
+</div>
+</div>
+
+<div class="news-section">
+<h2>💻 技术与硬件</h2>
+
+<div class="news-item">
+<h3><a href="https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/">MacBook Pro M5 Pro/Max 发布</a></h3>
+<p>苹果发布搭载全新 M5 Pro 和 M5 Max 芯片的 MacBook Pro，进一步提升专业级性能。新款芯片采用先进制程工艺，在 AI 推理和视频渲染方面实现显著性能提升。</p>
+<span class="source">HN 556↑</span>
+</div>
+
+<div class="news-item">
+<h3><a href="https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-macbook-air-with-m5/">MacBook Air M5 上市</a></h3>
+<p>苹果同步发布 M5 芯片版 MacBook Air，将强大性能带入轻薄本领域。M5 芯片在能效比方面再次突破，为移动办公提供更长续航时间。</p>
+<span class="source">HN 324↑</span>
+</div>
+
+<div class="news-item">
+<h3><a href="https://www.tomshardware.com/pc-components/cpus/intels-make-or-break-18a-process-node-debuts-for-data-center-with-288-core-xeon-6-cpu-multi-chip-monster-sports-12-channels-of-ddr5-8000-foveros-direct-3d-packaging-tech">英特尔 18A 工艺节点首秀：288核至强处理器</a></h3>
+<p>英特尔 18A 制程工艺正式亮相，首款产品是 288 核心的至强6代数据中心处理器。该芯片采用 Foveros Direct 3D 封装技术和12通道 DDR5-8000，代表英特尔制程复兴的关键节点。</p>
+<span class="source">HN 170↑</span>
+</div>
+
+<div class="news-item">
+<h3><a href="https://github.com/adamveld12/ghost">Ghost：Git 即编程助手</a></h3>
+<p>创新项目 Ghost 将 Git 本身打造为编程助手，通过 Shell 脚本实现代码生成和版本控制的深度集成。项目探索版本控制系统作为 AI 开发工具的新范式。⭐123</p>
+<span class="source">GitHub Trending</span>
+</div>
+</div>
+
+<div class="news-section">
+<h2>🔐 隐私与安全</h2>
+
+<div class="news-item">
+<h3><a href="https://neilzone.co.uk/2026/03/im-struggling-to-think-of-any-online-services-for-which-id-be-willing-to-verify-my-identity-or-age/">在线身份验证的信任危机</a></h3>
+<p>知名博主撰文探讨在线身份验证带来的隐私担忧。文章指出，随着各国推行强制身份验证政策，用户面临隐私暴露风险，几乎找不到值得托付真实身份的在线服务。引发广泛讨论。</p>
+<span class="source">HN 821↑ (热议)</span>
+</div>
+</div>
+
+<div class="news-section">
+<h2>🔬 科学与探索</h2>
+
+<div class="news-item">
+<h3><a href="https://www.youtube.com/watch?v=B3m3AMRlYfc">Physics Girl：通过中微子探测为太阳成像</a></h3>
+<p>科普视频介绍日本 Super-Kamiokande 中微子探测器如何通过捕捉太阳中微子为太阳"拍照"。这项技术突破了传统光学限制，展示了基础物理研究的魅力。</p>
+<span class="source">HN 352↑</span>
+</div>
+</div><div class="section">
+  <div class="section-title">
+    <span class="emoji">📰</span>
+    <span>科技博客精选（来自 92 个顶级源）</span>
+  </div>
+  <h3>🤖 AI/ML</h3>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://simonwillison.net/2026/Mar/3/gemini-31-flash-lite/#atom-everything">Gemini 3.1 Flash-Lite</a>
+    </div>
+    <div class="news-content">
+      Gemini 3.1 Flash-Lite
+Google's latest model is an update to their inexpensive Flash-Lite family. At $0.25/million tokens of input and $1.5/million output this is 1/8th the price of Gemini 3.1 Pro.
+It ...
+    </div>
+    <div class="news-meta">
+      来源: simonwillison.net | 7 分钟前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-macbook-air-with-m5/">New MacBook Air With M5</a>
+    </div>
+    <div class="news-meta">
+      来源: daringfireball.net | 52 分钟前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.insightpartners.com/ideas/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/">Ayar Labs Closes $500M Series E, Accelerates Volume Production of Co-Packaged Optics</a>
+    </div>
+    <div class="news-content">
+      Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key...
+    </div>
+    <div class="news-meta">
+      来源: insightpartners.com | 59 分钟前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/">Apple Introduces MacBook Pro Models With M5 Pro and M5 Max Chips</a>
+    </div>
+    <div class="news-meta">
+      来源: daringfireball.net | 1 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://blog.jim-nielsen.com/2026/w0rdz-aRe-1mpoRtAnt/">w0rdz aRe 1mpoRtAnt</a>
+    </div>
+    <div class="news-content">
+      The other day I was looking at the team billing section of an AI product. They had a widget labeled “Usage leaderboard”.
+For whatever reason, that phrase at that moment made me pause and reflect — and...
+    </div>
+    <div class="news-meta">
+      来源: blog.jim-nielsen.com | 3 小时前
+    </div>
+  </div>
+  <h3>💻 Tech</h3>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.apple.com/newsroom/2026/03/apple-unveils-new-studio-display-and-all-new-studio-display-xdr/">Apple Announces Updated Studio Display and All-New Studio Display XDR</a>
+    </div>
+    <div class="news-meta">
+      来源: daringfireball.net | 36 分钟前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.joanwestenberg.com/a-soft-landing-manual-for-the-second-gilded-age/">A soft-landing manual for the second gilded age</a>
+    </div>
+    <div class="news-content">
+      By the summer of 1945, West Berlin had been reduced to rubble. Allied bombing, the Soviet ground assault and Hitler&apos;s insistence on G&#xF6;tterd&#xE4;mmerung had destroyed roughly a third of the ...
+    </div>
+    <div class="news-meta">
+      来源: joanwestenberg.com | 54 分钟前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.macrumors.com/2026/03/03/apple-accidentally-leaks-macbook-neo/">Apple Might Have Prematurely Leaked the Name ‘MacBook Neo’</a>
+    </div>
+    <div class="news-meta">
+      来源: daringfireball.net | 1 小时前
+    </div>
+  </div>
+</div>
+
+    
+    <div class="footer">
+        <p>📅 2026年03月04日 | 由 OpenClaw 自动收集整理</p>
+        <p>数据来源: Hacker News, GitHub Trending, Top 20 VC机构</p>
+    </div>
+</body>
+</html>
