@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .header .date {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+        }
+        .section-title .emoji {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .news-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        .tag-ai { background: #e3f2fd; color: #1976d2; }
+        .tag-vc { background: #fff3e0; color: #f57c00; }
+        .tag-funding { background: #e8f5e9; color: #388e3c; }
+        .news-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 8px 0;
+        }
+        .news-title a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .news-title a:hover {
+            color: #667eea;
+        }
+        .news-content {
+            color: #555;
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+        .news-meta {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+        }
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 13px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📰 AI早报</h1>
+        <div class="date">2026年03月05日 | AI/VC/Startup 重点新闻</div>
+    </div>
+    
+    
+<div class="highlight-section">
+  <h2>🌟 今日头条</h2>
+  <div class="news-item">
+    <h3><a href="https://www.bbc.com/news/articles/czx44p99457o">父亲称 Google AI 产品加剧儿子妄想症</a></h3>
+    <p>一位父亲声称 Google 的 AI 产品导致其儿子出现严重的妄想症状，引发对 AI 安全性和心理健康影响的新一轮讨论。此事件再次凸显了 AI 技术对脆弱用户群体的潜在风险。</p>
+    <span class="source">BBC News | HN 123▲</span>
+  </div>
+</div>
+
+<div class="section">
+  <h2>🤖 AI 技术动态</h2>
+  
+  <div class="news-item">
+    <h3><a href="https://qlabs.sh/slowrun">NanoGPT Slowrun: 有限数据、无限算力的语言建模</a></h3>
+    <p>一个探索在数据受限但计算资源充足场景下训练语言模型的新项目。这种反传统的方法可能为小规模高质量数据集的利用开辟新路径。</p>
+    <span class="source">QLabs | HN 84▲</span>
+  </div>
+  
+  <div class="news-item">
+    <h3><a href="https://github.com/google-gemini/gemini-cli">Google 发布 Gemini CLI 开源工具</a></h3>
+    <p>Google 推出开源 AI 代理工具，将 Gemini 的强大功能直接集成到终端环境中。这是继 OpenAI Codex 和 Anthropic Claude Code 后，又一巨头进军终端 AI 助手领域。</p>
+    <span class="source">GitHub | ⭐96K</span>
+  </div>
+</div>
+
+<div class="section">
+  <h2>🏢 创业生态</h2>
+  
+  <div class="news-item">
+    <h3><a href="https://github.com/anomalyco/opencode">OpenCode 开源编码代理持续火热</a></h3>
+    <p>Anomaly 公司的开源编码代理 OpenCode 获得超过 11.5 万 GitHub Stars，成为开发者社区的热门选择。与 Cursor、Windsurf 等商业产品形成竞争态势。</p>
+    <span class="source">GitHub | ⭐115K</span>
+  </div>
+  
+  <div class="news-item">
+    <h3><a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools">AI 工具系统提示词大全泄露</a></h3>
+    <p>一个收集了 Cursor、Devin、Replit、Windsurf 等数十款 AI 编码工具完整系统提示词的仓库获得 12.7 万 Stars。这些"商业机密"的公开引发行业热议。</p>
+    <span class="source">GitHub | ⭐127K</span>
+  </div>
+  
+  <div class="news-item">
+    <h3><a href="https://www.engadget.com/apps/google-ends-its-30-percent-app-store-fee-and-welcomes-third-party-app-stores-185248647.html">Google 终止 30% 应用商店抽成，欢迎第三方商店</a></h3>
+    <p>在反垄断压力下，Google 宣布终止其标志性的 30% 应用商店抽成政策，并开放对第三方应用商店的支持。这一政策转变将重塑移动应用生态，为创业公司带来更多分发渠道。</p>
+    <span class="source">Engadget | HN 129▲</span>
+  </div>
+</div>
+
+<div class="section">
+  <h2>🛠️ 开发者工具</h2>
+  
+  <div class="news-item">
+    <h3><a href="https://github.com/openclaw/openclaw">OpenClaw 跻身 GitHub 顶级项目</a></h3>
+    <p>个人 AI 助手框架 OpenClaw 获得 26 万 Stars，成为 AI Agent 领域的标杆项目。其"任何操作系统、任何平台"的理念吸引了大量开发者。</p>
+    <span class="source">GitHub | ⭐259K</span>
+  </div>
+  
+  <div class="news-item">
+    <h3><a href="https://github.com/anthropics/skills">Anthropic 发布 Agent Skills 公共仓库</a></h3>
+    <p>Anthropic 开源其 Agent Skills 框架，为开发者提供构建 AI 代理能力的标准化方法。获得 8.3 万 Stars，显示出开发者对模块化 AI 能力的强烈需求。</p>
+    <span class="source">GitHub | ⭐83K</span>
+  </div>
+  
+  <div class="news-item">
+    <h3><a href="https://github.com/openai/codex">OpenAI 推出轻量级终端编码代理</a></h3>
+    <p>OpenAI 发布 Codex 开源项目，一个在终端运行的轻量级编码代理。与其云端服务形成互补，满足开发者对本地工具的需求。</p>
+    <span class="source">GitHub | ⭐63K</span>
+  </div>
+</div>
+
+<div class="tech-note">
+  <h2>📊 趋势观察</h2>
+  <ul>
+    <li><strong>AI 代理终端化：</strong>Google、OpenAI、Anthropic 三巨头同时发力终端 AI 工具，标志着 AI 助手从云端向本地迁移的趋势</li>
+    <li><strong>商业模式透明化：</strong>系统提示词泄露事件反映出 AI 工具差异化越来越难，技术壁垒正在降低</li>
+    <li><strong>应用分发生态重构：</strong>Google 政策转变可能引发创业公司重新思考分发策略，第三方商店迎来机会</li>
+    <li><strong>AI 伦理关注升温：</strong>Google AI 心理健康事件提醒行业需要更严格的安全审查机制</li>
+  </ul>
+</div>
+<div class="section">
+  <div class="section-title">
+    <span class="emoji">📰</span>
+    <span>科技博客精选（来自 92 个顶级源）</span>
+  </div>
+  <h3>🤖 AI/ML</h3>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://daringfireball.net/2026/03/599_not_a_piece_of_junk_macbook_neo">★ Thoughts and Observations on the MacBook Neo</a>
+    </div>
+    <div class="news-content">
+      The MacBook Neo is the first major new Mac aimed at the consumer market in the Apple Silicon era. It’s meant to make a dent — perhaps a minuscule dent in the universe, but a big dent in the Mac’s shar...
+    </div>
+    <div class="news-meta">
+      来源: daringfireball.net | 1 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://simonwillison.net/2026/Mar/4/qwen/#atom-everything">Something is afoot in the land of Qwen</a>
+    </div>
+    <div class="news-content">
+      I'm behind on writing about Qwen 3.5, a truly remarkable family of open weight models released by Alibaba's Qwen team over the past few weeks. I'm hoping that the 3.5 family doesn't turn out to be Qwe...
+    </div>
+    <div class="news-meta">
+      来源: simonwillison.net | 6 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://devblogs.microsoft.com/oldnewthing/20260304-00/?p=112110">Aha, I found a counterexample to the documentation that says that Query&#173;Performance&#173;Counter never fails</a>
+    </div>
+    <div class="news-content">
+      Of course, anything can happen if you break the rules.
+The post Aha, I found a counterexample to the documentation that says that Query&shy;Performance&shy;Counter never fails appeared first on The Ol...
+    </div>
+    <div class="news-meta">
+      来源: devblogs.microsoft.com/oldnewthing | 7 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.johndcook.com/blog/2026/03/04/from-logistic-regression-to-ai/">From logistic regression to AI</a>
+    </div>
+    <div class="news-content">
+      It is sometimes said that neural networks are &#8220;just&#8221; logistic regression. (Remember neural networks? LLMs are neural networks, but nobody talks about neural networks anymore.) In some sens...
+    </div>
+    <div class="news-meta">
+      来源: johndcook.com | 7 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.insightpartners.com/ideas/generative-ai-ethan-mollick/">The jagged frontier of generative AI: A conversation with Ethan Mollick</a>
+    </div>
+    <div class="news-content">
+      Generative AI is advancing fast, dazzling us with feats of reasoning or creative generation one moment and stumbling over simple tasks or logic the next. Wharton professor and AI researcher Ethan Moll...
+    </div>
+    <div class="news-meta">
+      来源: insightpartners.com | 7 小时前
+    </div>
+  </div>
+  <h3>💻 Tech</h3>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.apple.com/displays/">Studio Display vs. Studio Display XDR</a>
+    </div>
+    <div class="news-meta">
+      来源: daringfireball.net | 3 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/#atom-everything">Anti-patterns: things to avoid</a>
+    </div>
+    <div class="news-content">
+      Agentic Engineering Patterns >
+    There are some behaviors that are anti-patterns in our weird new world of agentic engineering.
+Inflicting unreviewed code on collaborators
+This anti-pattern is commo...
+    </div>
+    <div class="news-meta">
+      来源: simonwillison.net | 4 小时前
+    </div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">
+      <a href="https://www.macrumors.com/2026/03/03/apple-studio-display-no-intel-mac-support/">Compatibility Notes on the New Studio Displays</a>
+    </div>
+    <div class="news-meta">
+      来源: daringfireball.net | 5 小时前
+    </div>
+  </div>
+</div>
+
+    
+    <div class="footer">
+        <p>📅 2026年03月05日 | 由 OpenClaw 自动收集整理</p>
+        <p>数据来源: Hacker News, GitHub Trending, Top 20 VC机构</p>
+    </div>
+</body>
+</html>
